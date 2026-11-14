@@ -5,7 +5,34 @@
   "clics_recus": 0,
   "mode": "réceptionniste"
  },
- "episodes": {},
+ "episodes": {
+  "EP001": {
+   "envoye_le": "2026-11-14T10:41:05.274697+00:00",
+   "message_id": 5,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#typhlosion",
+     "#megaexcadrill",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP001",
+    "legende": "Typhlosion 🔵 vs 🔴 Mega Excadrill in Crystal Cave! ⚔️\nWho wins? Team 🔵 or Team 🔴? Comment before the end! 👇\nNew battles every day on Crossover Arena.",
+    "miniature_s": 26.2,
+    "test": true,
+    "titre": "Typhlosion vs Mega Excadrill — Who wins?",
+    "youtube_description": "Typhlosion 🔵 vs 🔴 Mega Excadrill in Crystal Cave! ⚔️\nWho wins? Team 🔵 or Team 🔴? Comment before the end! 👇\nNew battles every day on Crossover Arena."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": true,
+   "titre": "Typhlosion vs Mega Excadrill — Who wins?",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP001.mp4"
+  }
+ },
  "offset": 0,
  "pause": false,
  "relais_a_confirmer": []
