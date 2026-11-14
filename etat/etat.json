@@ -1,0 +1,14 @@
+{
+ "alertes": {},
+ "correctif_instagram": 1,
+ "diag_telegram": {
+  "clics_recus": 1,
+  "mode": "réceptionniste"
+ },
+ "episodes": {},
+ "offset": 0,
+ "pause": false,
+ "relais_a_confirmer": [
+  976274021
+ ]
+}
