@@ -73,6 +73,33 @@
    "titre": "Typhlosion vs Mega Excadrill… this one went down to the wire 🔥⛏️",
    "valide_le": "2026-11-14T12:07:18.196781+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP002.mp4"
+  },
+  "EP003": {
+   "creneau_prevu": "2026-11-15T11:00:00+00:00",
+   "envoye_le": "2026-11-14T13:46:20.797481+00:00",
+   "message_id": 14,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#ampharos",
+     "#crawdaunt",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP003",
+    "legende": "Honestly, I changed my mind three times watching this one.\n\nEveryone's going to say Ampharos because of the type matchup. I'm not so sure about that.\n\nBe honest, who's your pick? ⚡ or 💧? Comment before you see the ending 👇\n\nNew battle every day at noon and 8 PM. Follow so you don't miss the next one.",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Ampharos vs Crawdaunt… don't trust the type chart ⚡💧 #shorts",
+    "youtube_description": "Honestly, I changed my mind three times watching this one.\nEveryone's going to say Ampharos because of the type matchup. I'm not so sure about that.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⚡ Ampharos or 💧 Crawdaunt?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Ampharos vs Crawdaunt… don't trust the type chart ⚡💧 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP003.mp4"
   }
  },
  "offset": 0,
