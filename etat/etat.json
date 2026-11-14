@@ -2,7 +2,7 @@
  "alertes": {},
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 1,
+  "clics_recus": 7,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -117,6 +117,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP003.mp4"
   },
   "EP004": {
+   "creneau": "2026-11-15T19:00:00+00:00",
    "creneau_prevu": "2026-11-15T19:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:19.731817+00:00",
    "message_id": 18,
@@ -139,13 +140,28 @@
     "titre": "Whirlipede & Gabite vs Flutter Mane & Alomomola… one hit could end it 🐛👻 #shorts",
     "youtube_description": "Whirlipede & Gabite vs Flutter Mane & Alomomola in Stade d'Acier. I did not expect this one to go like that.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Whirlipede & Gabite or 👻 Flutter Mane & Alomomola?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b2176c23bf1c7227a21",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b20918fe79d2e8813c5",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b20b9a106584c519226",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Whirlipede & Gabite vs Flutter Mane & Alomomola… one hit could end it 🐛👻 #shorts",
+   "valide_le": "2026-11-14T15:15:21.777939+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP004.mp4"
   },
   "EP005": {
+   "creneau": "2026-11-16T11:00:00+00:00",
    "creneau_prevu": "2026-11-16T11:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:23.095068+00:00",
    "message_id": 21,
@@ -166,13 +182,28 @@
     "titre": "Toxapex vs Parasect… nobody's safe in this one ☠️🐛 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nBefore you watch the end, tell me in the comments who you're backing:\n☠️ Toxapex or 🐛 Parasect?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b23c5b364e062fbdc57",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b22c5b364e062fbdc02",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b23e86a5789a6b4d6e5",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Toxapex vs Parasect… nobody's safe in this one ☠️🐛 #shorts",
+   "valide_le": "2026-11-14T15:15:22.317596+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP005.mp4"
   },
   "EP006": {
+   "creneau": "2026-11-16T19:00:00+00:00",
    "creneau_prevu": "2026-11-16T19:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:25.676298+00:00",
    "message_id": 24,
@@ -195,13 +226,28 @@
     "titre": "Mega Aerodactyl & Ceruledge vs Giratina & Mega Alakazam… nobody's safe in this one 🪨👻 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🪨 Mega Aerodactyl & Ceruledge or 👻 Giratina & Mega Alakazam?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b25918fe79d2e88155c",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b2476c23bf1c7227b2b",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b2576c23bf1c7227b5e",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Mega Aerodactyl & Ceruledge vs Giratina & Mega Alakazam… nobody's safe in this one 🪨👻 #shorts",
+   "valide_le": "2026-11-14T15:15:22.589869+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP006.mp4"
   },
   "EP007": {
+   "creneau": "2026-11-17T11:00:00+00:00",
    "creneau_prevu": "2026-11-17T11:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:28.290879+00:00",
    "message_id": 27,
@@ -222,13 +268,28 @@
     "titre": "Urshifu vs Deoxys… one hit could end it 🥊🔮 #shorts",
     "youtube_description": "Two Pokémon walk into Banquise. Only one Pokémon walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🥊 Urshifu or 🔮 Deoxys?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b27c5b364e062fbdd96",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b2676c23bf1c7227bf3",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b27c5b364e062fbdd12",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Urshifu vs Deoxys… one hit could end it 🥊🔮 #shorts",
+   "valide_le": "2026-11-14T15:15:22.890214+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP007.mp4"
   },
   "EP008": {
+   "creneau": "2026-11-17T19:00:00+00:00",
    "creneau_prevu": "2026-11-17T19:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:30.741646+00:00",
    "message_id": 30,
@@ -251,13 +312,28 @@
     "titre": "Mega Manectric & Vespiquen vs Lugia & Mega Glalie… nobody's safe in this one ⚡🔮 #shorts",
     "youtube_description": "This battle in Scorching Desert had me on the edge of my seat.\nMega Manectric & Vespiquen and Lugia & Mega Glalie can both punch through each other's defenses. One good hit could decide everything.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⚡ Mega Manectric & Vespiquen or 🔮 Lugia & Mega Glalie?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b2a76c23bf1c7228396",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b28e86a5789a6b4d880",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b29b9a106584c519cbe",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Mega Manectric & Vespiquen vs Lugia & Mega Glalie… nobody's safe in this one ⚡🔮 #shorts",
+   "valide_le": "2026-11-14T15:15:23.199049+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP008.mp4"
   },
   "EP009": {
+   "creneau": "2026-11-18T11:00:00+00:00",
    "creneau_prevu": "2026-11-18T11:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:33.336830+00:00",
    "message_id": 33,
@@ -278,10 +354,24 @@
     "titre": "Metang vs Morgrem… one hit could end it ⚙️🌑 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⚙️ Metang or 🌑 Morgrem?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af87b2c76c23bf1c72284dc",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af87b2bc5b364e062fbe5b1",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af87b2bb9a106584c519d78",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Metang vs Morgrem… one hit could end it ⚙️🌑 #shorts",
+   "valide_le": "2026-11-14T15:15:23.513843+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP009.mp4"
   },
   "EP010": {
@@ -308,15 +398,190 @@
     "youtube_description": "They walk into Banquise. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Leavanny & Gogoat or ☠️ Toxapex & Mega Dragalge?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Leavanny & Gogoat vs Toxapex & Mega Dragalge… nobody's safe in this one 🐛☠️ #shorts",
+   "valide_le": "2026-11-14T15:15:23.838683+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP010.mp4"
+  },
+  "EP011": {
+   "creneau_prevu": "2026-11-19T11:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:27.863789+00:00",
+   "message_id": 41,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#megalucario",
+     "#archaludon",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP011",
+    "legende": "Two Pokémon walk into Quarry. Only one Pokémon walks out.\n\nFighting against steel should be easy for Mega Lucario… unless Archaludon has other plans.\n\nBe honest, who's your pick? 🥊 or ⚙️? Comment before you see the ending 👇\n\nNew battles every day at noon and 8 PM ⚡",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Mega Lucario vs Archaludon… the type chart says one thing… 🥊⚙️ #shorts",
+    "youtube_description": "Two Pokémon walk into Quarry. Only one Pokémon walks out.\nFighting against steel should be easy for Mega Lucario… unless Archaludon has other plans.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🥊 Mega Lucario or ⚙️ Archaludon?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Mega Lucario vs Archaludon… the type chart says one thing… 🥊⚙️ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP011.mp4"
+  },
+  "EP012": {
+   "creneau_prevu": "2026-11-19T19:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:31.761975+00:00",
+   "message_id": 44,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#dustox",
+     "#seaking",
+     "#crobat",
+     "#trevenant",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP012",
+    "legende": "This battle in Dragon Sanctuary had me on the edge of my seat.\n\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nDrop a 🐛 for Dustox & Seaking or a ☠️ for Crobat & Trevenant, and tag the friend who's always wrong about these 😄\n\nNew battle every day at noon and 8 PM. Follow so you don't miss the next one.",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Dustox & Seaking vs Crobat & Trevenant… one hit could end it 🐛☠️ #shorts",
+    "youtube_description": "This battle in Dragon Sanctuary had me on the edge of my seat.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Dustox & Seaking or ☠️ Crobat & Trevenant?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Dustox & Seaking vs Crobat & Trevenant… one hit could end it 🐛☠️ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP012.mp4"
+  },
+  "EP013": {
+   "creneau_prevu": "2026-11-20T11:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:34.690991+00:00",
+   "message_id": 47,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#tauros",
+     "#spewpa",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP013",
+    "legende": "Honestly, I changed my mind three times watching this one.\n\nNo real type advantage here, so it's pure power and timing.\n\nWho are you backing? ⭐ Tauros or 🐛 Spewpa? Lock it in before the end, no changing your answer 👇\n\nNew battles every day at noon and 8 PM ⚡",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
+    "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo real type advantage here, so it's pure power and timing.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⭐ Tauros or 🐛 Spewpa?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP013.mp4"
+  },
+  "EP014": {
+   "creneau_prevu": "2026-11-20T19:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:37.468782+00:00",
+   "message_id": 50,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#machamp",
+     "#kingler",
+     "#wyrdeer",
+     "#staraptor",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP014",
+    "legende": "They walk into Psychic Stadium. Only one team walks out.\n\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nDrop a 🥊 for Machamp & Kingler or a ⭐ for Wyrdeer & Staraptor, and tag the friend who's always wrong about these 😄\n\nNew battles every day at noon and 8 PM ⚡",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Machamp & Kingler vs Wyrdeer & Staraptor… one hit could end it 🥊⭐ #shorts",
+    "youtube_description": "They walk into Psychic Stadium. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🥊 Machamp & Kingler or ⭐ Wyrdeer & Staraptor?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Machamp & Kingler vs Wyrdeer & Staraptor… one hit could end it 🥊⭐ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP014.mp4"
+  },
+  "EP015": {
+   "creneau_prevu": "2026-11-21T11:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:40.037516+00:00",
+   "message_id": 53,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#regieleki",
+     "#urshifu",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP015",
+    "legende": "This battle in Giant Dojo had me on the edge of my seat.\n\nRegieleki vs Urshifu with no type advantage either way. Honestly, anything can happen.\n\nDrop a ⚡ for Regieleki or a 🥊 for Urshifu, and tag the friend who's always wrong about these 😄\n\nNew battle every day at noon and 8 PM. Follow so you don't miss the next one.",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Regieleki vs Urshifu… a real coin flip ⚡🥊 #shorts",
+    "youtube_description": "This battle in Giant Dojo had me on the edge of my seat.\nRegieleki vs Urshifu with no type advantage either way. Honestly, anything can happen.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⚡ Regieleki or 🥊 Urshifu?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Regieleki vs Urshifu… a real coin flip ⚡🥊 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP015.mp4"
+  },
+  "EP016": {
+   "creneau_prevu": "2026-11-21T19:00:00+00:00",
+   "envoye_le": "2026-11-14T15:15:42.542383+00:00",
+   "message_id": 56,
+   "meta": {
+    "hashtags": [
+     "#crossoverarena",
+     "#pokemon",
+     "#pokemonbattle",
+     "#masquerain",
+     "#wyrdeer",
+     "#megasteelix",
+     "#bellibolt",
+     "#gaming",
+     "#shorts"
+    ],
+    "id": "EP016",
+    "legende": "They walk into Stade d'Acier. Only one team walks out.\n\nEveryone's going to say Mega Steelix & Bellibolt because of the type matchup. I'm not so sure about that.\n\nBe honest, who's your pick? 🐛 or ⚙️? Comment before you see the ending 👇\n\nNew battle every day at noon and 8 PM. Follow so you don't miss the next one.",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Masquerain & Wyrdeer vs Mega Steelix & Bellibolt… the type chart says one thing… 🐛⚙️ #shorts",
+    "youtube_description": "They walk into Stade d'Acier. Only one team walks out.\nEveryone's going to say Mega Steelix & Bellibolt because of the type matchup. I'm not so sure about that.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Masquerain & Wyrdeer or ⚙️ Mega Steelix & Bellibolt?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Masquerain & Wyrdeer vs Mega Steelix & Bellibolt… the type chart says one thing… 🐛⚙️ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP016.mp4"
   }
  },
  "offset": 0,
  "pause": false,
  "relais_a_confirmer": [
-  976274023
+  976274024,
+  976274025,
+  976274026,
+  976274027,
+  976274028,
+  976274029,
+  976274030
  ]
 }
