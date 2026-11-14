@@ -375,6 +375,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP009.mp4"
   },
   "EP010": {
+   "creneau": "2026-11-18T19:00:00+00:00",
    "creneau_prevu": "2026-11-18T19:00:00+00:00",
    "envoye_le": "2026-11-14T14:29:35.562815+00:00",
    "message_id": 36,
@@ -397,8 +398,21 @@
     "titre": "Leavanny & Gogoat vs Toxapex & Mega Dragalge… nobody's safe in this one 🐛☠️ #shorts",
     "youtube_description": "They walk into Banquise. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Leavanny & Gogoat or ☠️ Toxapex & Mega Dragalge?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af8b564e86a5789a6c925d5",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af8b562e5a113497aa30238",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af8b563918fe79d2e9cf384",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Leavanny & Gogoat vs Toxapex & Mega Dragalge… nobody's safe in this one 🐛☠️ #shorts",
    "valide_le": "2026-11-14T15:15:23.838683+00:00",
