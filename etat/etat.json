@@ -2,7 +2,7 @@
  "alertes": {},
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 1,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -33,6 +33,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP001.mp4"
   },
   "EP002": {
+   "creneau": "2026-11-14T19:00:00+00:00",
    "creneau_prevu": "2026-11-14T19:00:00+00:00",
    "envoye_le": "2026-11-14T11:09:56.256198+00:00",
    "message_id": 9,
@@ -53,14 +54,30 @@
     "titre": "Typhlosion vs Mega Excadrill… this one went down to the wire 🔥⛏️",
     "youtube_description": "Honestly, I didn't see this ending coming.\nTyphlosion's fire should melt Excadrill's steel… but a Mega Excadrill drilling through the ground is a nightmare for any fire type. Both of them can hit super effective, so it all comes down to who lands it first.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🔥 Typhlosion or ⛏️ Mega Excadrill?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6af84ef9bb36d009090b223c",
+     "message": "programmé pour 2026-11-14T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af84ef8d8bd2962e42a2a05",
+     "message": "programmé pour 2026-11-14T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af84ef84b28296eb156669b",
+     "message": "programmé pour 2026-11-14T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Typhlosion vs Mega Excadrill… this one went down to the wire 🔥⛏️",
+   "valide_le": "2026-11-14T12:07:18.196781+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP002.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  976274022
+ ]
 }
