@@ -462,6 +462,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP011.mp4"
   },
   "EP012": {
+   "creneau": "2026-11-19T19:00:00+00:00",
    "creneau_prevu": "2026-11-19T19:00:00+00:00",
    "envoye_le": "2026-11-14T15:15:31.761975+00:00",
    "message_id": 44,
@@ -484,8 +485,21 @@
     "titre": "Dustox & Seaking vs Crobat & Trevenant… one hit could end it 🐛☠️ #shorts",
     "youtube_description": "This battle in Dragon Sanctuary had me on the edge of my seat.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Dustox & Seaking or ☠️ Crobat & Trevenant?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afa0505e5a113497a0a7157",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afa050455ad64be5051ab2e",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afa0504ee359588b5497144",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Dustox & Seaking vs Crobat & Trevenant… one hit could end it 🐛☠️ #shorts",
    "valide_le": "2026-11-15T13:27:36.998958+00:00",
