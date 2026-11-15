@@ -2,7 +2,7 @@
  "alertes": {},
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 8,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -668,14 +668,5 @@
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [
-  976274031,
-  976274032,
-  976274033,
-  976274034,
-  976274035,
-  976274036,
-  976274037,
-  976274038
- ]
+ "relais_a_confirmer": []
 }
