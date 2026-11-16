@@ -548,6 +548,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP013.mp4"
   },
   "EP014": {
+   "creneau": "2026-11-20T19:00:00+00:00",
    "creneau_prevu": "2026-11-20T19:00:00+00:00",
    "envoye_le": "2026-11-14T15:15:37.468782+00:00",
    "message_id": 50,
@@ -570,8 +571,21 @@
     "titre": "Machamp & Kingler vs Wyrdeer & Staraptor… one hit could end it 🥊⭐ #shorts",
     "youtube_description": "They walk into Psychic Stadium. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🥊 Machamp & Kingler or ⭐ Wyrdeer & Staraptor?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afb5d1b5cc8fb875e5e95b6",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afb5d1a03628cad694ef1d5",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afb5d1ae9e30bcd5a86f11c",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Machamp & Kingler vs Wyrdeer & Staraptor… one hit could end it 🥊⭐ #shorts",
    "valide_le": "2026-11-15T13:27:37.394005+00:00",
