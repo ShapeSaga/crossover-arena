@@ -28,7 +28,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": true,
    "titre": "Typhlosion vs Mega Excadrill — Who wins?",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP001.mp4"
@@ -506,6 +506,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP012.mp4"
   },
   "EP013": {
+   "creneau": "2026-11-20T11:00:00+00:00",
    "creneau_prevu": "2026-11-20T11:00:00+00:00",
    "envoye_le": "2026-11-14T15:15:34.690991+00:00",
    "message_id": 47,
@@ -526,8 +527,21 @@
     "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo real type advantage here, so it's pure power and timing.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⭐ Tauros or 🐛 Spewpa?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afae26787a8bd00b04a04ed",
+     "message": "programmé pour 2026-11-20T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afae26691ba8aa74bcae7a2",
+     "message": "programmé pour 2026-11-20T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afae26791ba8aa74bcae8ab",
+     "message": "programmé pour 2026-11-20T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
    "valide_le": "2026-11-15T13:27:37.193779+00:00",
