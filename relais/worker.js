@@ -78,6 +78,18 @@ export default {
       await tg(env, "sendMessage", { chat_id: env.TELEGRAM_CHAT_ID, text: "🔐 Autorisation YouTube reçue ✔️ Le robot la met en place à son prochain passage." });
       return page("✅ C'est fait", "Autorisation reçue. Tu peux fermer cette page : le robot confirmera sur Telegram.");
     }
+    if ((url.pathname === "/" || url.pathname === "/confidentialite") && req.method === "GET") {   // liens de l'écran Google
+      const corps = url.pathname === "/"
+        ? `<h1>Crossover Arena</h1><p>Private robot of the Crossover Arena channel: it publishes daily Pokémon battle Shorts and sets their thumbnails.</p>`
+          + `<p><a style="color:#7cf" href="https://www.youtube.com/@CrossoverArena">youtube.com/@CrossoverArena</a> · <a style="color:#7cf" href="/confidentialite">Privacy policy</a></p>`
+        : `<h1>Privacy policy</h1><p>This robot is used only by the owner of the Crossover Arena YouTube channel.</p>`
+          + `<p>With the owner's permission it reads the channel's own video list and sets thumbnails on the channel's own videos. `
+          + `It collects no data about viewers or other people, shares nothing with third parties and sells nothing.</p>`
+          + `<p>The authorization is stored privately and can be revoked at any time at myaccount.google.com/permissions.</p>`;
+      return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Crossover Arena</title>`
+        + `<body style="font-family:sans-serif;background:#0b0e1f;color:#fff;max-width:640px;margin:auto;padding:48px 16px;line-height:1.5">${corps}</body>`,
+        { headers: { "content-type": "text/html; charset=utf-8" } });
+    }
     if (req.headers.get("X-Cle") !== env.ROBOT_KEY) return new Response("non", { status: 403 });
     if (url.pathname === "/youtube/jeton" && req.method === "GET")
       return json({ ok: true, code: await env.CLICS.get("youtube:code"), refresh: await env.CLICS.get("youtube:refresh") });
