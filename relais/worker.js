@@ -3,7 +3,9 @@
 //  - il répond tout de suite « ✅ Bien reçu » et remplace les 3 boutons par un bouton inactif (plus de double clic) ;
 //  - il garde le clic (KV) jusqu'à ce que le robot GitHub le lise (GET /clics) puis le confirme (POST /ack).
 // Un webhook actif empêche aussi tout autre programme de lire le bot (erreur 409 chez lui).
-// Secrets du Worker : TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, WEBHOOK_SECRET, ROBOT_KEY (posés par le workflow d'installation).
+// Secrets du Worker : TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, WEBHOOK_SECRET, ROBOT_KEY, YOUTUBE_STATE (posés par le workflow d'installation).
+// YouTube (miniatures) : Google renvoie Chahine sur /youtube après son « Autoriser » ; le code est gardé ici (KV privée)
+// jusqu'à ce que le robot l'échange, puis l'autorisation durable du robot est gardée ici aussi (jamais dans le dépôt public).
 
 const LIBELLE = { v: "✅ Validé", r: "❌ Refusé", f: "🔁 Refaire demandé" };
 const COMMANDES = { ok: "v", valider: "v", non: "r", refuser: "r" };
@@ -65,7 +67,27 @@ export default {
       try { await recevoir(env, await req.json()); } catch (e) { console.log("erreur", e); }
       return new Response("ok");                                             // toujours 200 : Telegram ne renvoie pas en boucle
     }
+    if (url.pathname === "/youtube" && req.method === "GET") {              // retour de la page Google
+      const page = (titre, texte) => new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">`
+        + `<body style="font-family:sans-serif;background:#0b0e1f;color:#fff;text-align:center;padding:48px 16px">`
+        + `<h1>${titre}</h1><p style="font-size:18px">${texte}</p></body>`, { headers: { "content-type": "text/html; charset=utf-8" } });
+      const code = url.searchParams.get("code");
+      if (!env.YOUTUBE_STATE || url.searchParams.get("state") !== env.YOUTUBE_STATE || !code)
+        return page("❌ Autorisation non reçue", url.searchParams.get("error") ? "Google a répondu : " + url.searchParams.get("error") : "Lien invalide : reprends le bouton du bot Telegram.");
+      await env.CLICS.put("youtube:code", code, { expirationTtl: 3600 });
+      await tg(env, "sendMessage", { chat_id: env.TELEGRAM_CHAT_ID, text: "🔐 Autorisation YouTube reçue ✔️ Le robot la met en place à son prochain passage." });
+      return page("✅ C'est fait", "Autorisation reçue. Tu peux fermer cette page : le robot confirmera sur Telegram.");
+    }
     if (req.headers.get("X-Cle") !== env.ROBOT_KEY) return new Response("non", { status: 403 });
+    if (url.pathname === "/youtube/jeton" && req.method === "GET")
+      return json({ ok: true, code: await env.CLICS.get("youtube:code"), refresh: await env.CLICS.get("youtube:refresh") });
+    if (url.pathname === "/youtube/jeton" && req.method === "POST") {
+      const { refresh } = await req.json();
+      if (refresh) await env.CLICS.put("youtube:refresh", refresh);
+      return json({ ok: true });
+    }
+    if (url.pathname === "/youtube/code-lu" && req.method === "POST") { await env.CLICS.delete("youtube:code"); return json({ ok: true }); }
+    if (url.pathname === "/youtube/oubli" && req.method === "POST") { await env.CLICS.delete("youtube:refresh"); return json({ ok: true }); }
     if (url.pathname === "/clics" && req.method === "GET") {
       const liste = await env.CLICS.list({ prefix: "clic:" });
       const maj = [];

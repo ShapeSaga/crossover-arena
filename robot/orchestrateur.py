@@ -418,6 +418,10 @@ class Orchestrateur:
         for e in json.loads(fichier.read_text(encoding="utf-8")):
             self.alerter(f"fab-{e['episode']}", f"La vidéo {e['episode']} n'a pas pu être fabriquée : {e['erreur']}")
 
+    def miniatures_youtube(self) -> None:
+        from .youtube import MiniaturesYouTube
+        MiniaturesYouTube(self).cycle()
+
     def menage(self) -> None:
         jours = self.conf["publication"]["hebergement"]["conserver_jours"]
         for cle, f in self.etat.episodes.items():
@@ -448,6 +452,7 @@ class Orchestrateur:
             raise SystemExit("Secrets manquants : " + ", ".join(manquants))
         for nom, fn in (("fabrication", self.echecs_fabrication), ("Telegram", self.lire_telegram), ("délais", self.gerer_delais),
                         ("envoi des nouvelles vidéos", self.envoyer_nouveaux),
-                        ("publication", self.publier_valides), ("ménage", self.menage)):
+                        ("publication", self.publier_valides), ("miniatures YouTube", self.miniatures_youtube),
+                        ("ménage", self.menage)):
             self._etape(nom, fn)
         self.etat.sauvegarder()

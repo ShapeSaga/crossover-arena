@@ -4,6 +4,9 @@ name: Installer le réceptionniste
 
 on:
   workflow_dispatch: {}
+  push:                          # mise à jour automatique quand le réceptionniste change
+    branches: [main]
+    paths: ["relais/worker.js", ".github/workflows/relais.yml"]
 
 permissions:
   contents: write
@@ -35,6 +38,7 @@ jobs:
           H="Authorization: Bearer $CF_TOKEN"
           echo "::add-mask::$(printf '%s' "$TG:robot" | sha256sum | cut -c1-48)"
           echo "::add-mask::$(printf '%s' "$TG:webhook" | sha256sum | cut -c1-48)"
+          echo "::add-mask::$(printf '%s' "$TG:youtube" | sha256sum | cut -c1-32)"
           KV=$(curl -s -H "$H" "$API/storage/kv/namespaces?per_page=100" | jq -r '.result[] | select(.title=="crossover-arena-clics") | .id' | head -1)
           if [ -z "$KV" ]; then
             KV=$(curl -s -X POST -H "$H" -H "Content-Type: application/json" -d '{"title":"crossover-arena-clics"}' "$API/storage/kv/namespaces" | jq -r '.result.id')
@@ -56,6 +60,7 @@ jobs:
           printf '%s' "$TG_CHAT" | npx --yes wrangler@3.114.0 secret put TELEGRAM_CHAT_ID
           printf '%s' "$TG:webhook" | sha256sum | cut -c1-48 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put WEBHOOK_SECRET
           printf '%s' "$TG:robot" | sha256sum | cut -c1-48 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put ROBOT_KEY
+          printf '%s' "$TG:youtube" | sha256sum | cut -c1-32 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put YOUTUBE_STATE
       - name: Brancher Telegram sur le réceptionniste
         run: |
           SECRET=$(printf '%s' "$TG:webhook" | sha256sum | cut -c1-48)
