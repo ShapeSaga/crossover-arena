@@ -5,6 +5,10 @@
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
+ "creneaux_appliques": [
+  "02:00",
+  "21:00"
+ ],
  "diag_telegram": {
   "clics_recus": 0,
   "mode": "réceptionniste"
@@ -473,12 +477,12 @@
      "message": "programmé pour 2026-11-19T11:00:00.000Z"
     },
     "youtube": {
-     "id": "6affe7caca85ebefb0fffdd1",
-     "message": "programmé pour 2026-11-23T11:00:00.000Z"
+     "id": "6b00dca9dd205ed779a5f1be",
+     "message": "programmé pour 2026-11-21T01:00:00.000Z"
     }
    },
    "relance_erreur": "Buffer a refusé le post : You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day.",
-   "relance_yt": "2026-11-23T11:00:00+00:00",
+   "relance_yt": "2026-11-21T01:00:00+00:00",
    "relances_yt": 1,
    "statut": "publie",
    "test": false,
@@ -610,11 +614,11 @@
      "message": "programmé pour 2026-11-20T19:00:00.000Z"
     },
     "youtube": {
-     "id": "6b00d0f020a2d09a0ab842a4",
-     "message": "programmé pour 2026-11-23T19:00:00.000Z"
+     "id": "6b00dcaadd205ed779a5f27e",
+     "message": "programmé pour 2026-11-23T20:00:00.000Z"
     }
    },
-   "relance_yt": "2026-11-23T19:00:00+00:00",
+   "relance_yt": "2026-11-23T20:00:00+00:00",
    "relances_yt": 1,
    "statut": "publie",
    "test": false,
@@ -623,8 +627,8 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP014.mp4"
   },
   "EP015": {
-   "creneau": "2026-11-21T11:00:00+00:00",
-   "creneau_prevu": "2026-11-21T11:00:00+00:00",
+   "creneau": "2026-11-21T20:00:00+00:00",
+   "creneau_prevu": "2026-11-21T20:00:00+00:00",
    "envoye_le": "2026-11-14T15:15:40.037516+00:00",
    "message_id": 53,
    "meta": {
@@ -646,16 +650,16 @@
    },
    "programme": {
     "instagram": {
-     "id": "6afc3bd46d6484cf6f169f45",
-     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+     "id": "6b00dca0dd205ed779a5ef84",
+     "message": "programmé pour 2026-11-21T20:00:00.000Z"
     },
     "tiktok": {
-     "id": "6afc3bd26d6484cf6f169ecf",
-     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+     "id": "6b00dc9e9ffbc8503ce47ec6",
+     "message": "programmé pour 2026-11-21T20:00:00.000Z"
     },
     "youtube": {
-     "id": "6afc3bd4b9fb95e12d016710",
-     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+     "id": "6b00dc9f9ffbc8503ce47ef2",
+     "message": "programmé pour 2026-11-21T20:00:00.000Z"
     }
    },
    "statut": "programme",
@@ -665,8 +669,8 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP015.mp4"
   },
   "EP016": {
-   "creneau": "2026-11-21T19:00:00+00:00",
-   "creneau_prevu": "2026-11-21T19:00:00+00:00",
+   "creneau": "2026-11-22T01:00:00+00:00",
+   "creneau_prevu": "2026-11-22T01:00:00+00:00",
    "envoye_le": "2026-11-14T15:15:42.542383+00:00",
    "message_id": 56,
    "meta": {
@@ -690,16 +694,16 @@
    },
    "programme": {
     "instagram": {
-     "id": "6afcaef205ff5a8df3b2e130",
-     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+     "id": "6b00dca2d9cbb430a10641d9",
+     "message": "programmé pour 2026-11-22T01:00:00.000Z"
     },
     "tiktok": {
-     "id": "6afcaef041283412cdcd18f8",
-     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+     "id": "6b00dca19ffbc8503ce47f32",
+     "message": "programmé pour 2026-11-22T01:00:00.000Z"
     },
     "youtube": {
-     "id": "6afcaef1370676bd5d7fd3de",
-     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+     "id": "6b00dca1dd205ed779a5efde",
+     "message": "programmé pour 2026-11-22T01:00:00.000Z"
     }
    },
    "statut": "programme",
@@ -709,8 +713,8 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP016.mp4"
   },
   "EP017": {
-   "creneau": "2026-11-22T11:00:00+00:00",
-   "creneau_prevu": "2026-11-22T11:00:00+00:00",
+   "creneau": "2026-11-22T20:00:00+00:00",
+   "creneau_prevu": "2026-11-22T20:00:00+00:00",
    "envoye_le": "2026-11-14T23:20:18.963178+00:00",
    "message_id": 67,
    "meta": {
@@ -732,16 +736,16 @@
    },
    "programme": {
     "instagram": {
-     "id": "6afd8cdebe723dbbcfdd2b8d",
-     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+     "id": "6b00dca5dd205ed779a5f081",
+     "message": "programmé pour 2026-11-22T20:00:00.000Z"
     },
     "tiktok": {
-     "id": "6afd8cdd75578146ec4b208f",
-     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+     "id": "6b00dca320a2d09a0abc797f",
+     "message": "programmé pour 2026-11-22T20:00:00.000Z"
     },
     "youtube": {
-     "id": "6afd8cdd75578146ec4b20c8",
-     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+     "id": "6b00dca45102766245e0916c",
+     "message": "programmé pour 2026-11-22T20:00:00.000Z"
     }
    },
    "statut": "programme",
@@ -751,8 +755,8 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP017.mp4"
   },
   "EP018": {
-   "creneau": "2026-11-22T19:00:00+00:00",
-   "creneau_prevu": "2026-11-22T19:00:00+00:00",
+   "creneau": "2026-11-23T01:00:00+00:00",
+   "creneau_prevu": "2026-11-23T01:00:00+00:00",
    "envoye_le": "2026-11-14T23:20:22.105217+00:00",
    "message_id": 70,
    "meta": {
@@ -776,16 +780,16 @@
    },
    "programme": {
     "instagram": {
-     "id": "6afdfde42560a2d3fadbf401",
-     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+     "id": "6b00dca79ffbc8503ce4854a",
+     "message": "programmé pour 2026-11-23T01:00:00.000Z"
     },
     "tiktok": {
-     "id": "6afdfde22560a2d3fadbf322",
-     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+     "id": "6b00dca620a2d09a0abc7cb7",
+     "message": "programmé pour 2026-11-23T01:00:00.000Z"
     },
     "youtube": {
-     "id": "6afdfde39278850adf072998",
-     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+     "id": "6b00dca620a2d09a0abc7d09",
+     "message": "programmé pour 2026-11-23T01:00:00.000Z"
     }
    },
    "statut": "programme",
