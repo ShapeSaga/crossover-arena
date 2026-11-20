@@ -477,6 +477,7 @@
      "message": "programmé pour 2026-11-19T11:00:00.000Z"
     }
    },
+   "relance_erreur": "Buffer a refusé le post : You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day.",
    "statut": "publie",
    "test": false,
    "titre": "Mega Lucario vs Archaludon… the type chart says one thing… 🥊⚙️ #shorts",
