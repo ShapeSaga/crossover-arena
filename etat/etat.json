@@ -554,6 +554,7 @@
     "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo real type advantage here, so it's pure power and timing.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⭐ Tauros or 🐛 Spewpa?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6afae26787a8bd00b04a04ed",
@@ -572,7 +573,8 @@
    "test": false,
    "titre": "Tauros vs Spewpa… no type advantage, all skill ⭐🐛 #shorts",
    "valide_le": "2026-11-15T13:27:37.193779+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP013.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP013.mp4",
+   "youtube_id": "YnSdO-7v4jA"
   },
   "EP014": {
    "creneau": "2026-11-20T19:00:00+00:00",
@@ -608,11 +610,13 @@
      "message": "programmé pour 2026-11-20T19:00:00.000Z"
     },
     "youtube": {
-     "id": "6afb5d1ae9e30bcd5a86f11c",
-     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+     "id": "6b00d0f020a2d09a0ab842a4",
+     "message": "programmé pour 2026-11-23T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "relance_yt": "2026-11-23T19:00:00+00:00",
+   "relances_yt": 1,
+   "statut": "publie",
    "test": false,
    "titre": "Machamp & Kingler vs Wyrdeer & Staraptor… one hit could end it 🥊⭐ #shorts",
    "valide_le": "2026-11-15T13:27:37.394005+00:00",
