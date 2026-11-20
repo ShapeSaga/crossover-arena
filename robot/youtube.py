@@ -222,4 +222,9 @@ class MiniaturesYouTube:
                 self.o.bot.envoyer_message(f"🖼️ Miniature YouTube posée ✅ — <b>{echapper(cle)}</b>\n"
                                            f"https://youtube.com/shorts/{vid}")
         except ErreurHTTP as exc:
+            if "permissions to upload and set custom video thumbnails" in str(getattr(exc, "corps", "")):
+                self.o.alerter("yt-droits", "Miniatures YouTube bloquées : la chaîne n'a pas encore les « fonctionnalités "
+                               "intermédiaires ». YouTube Studio → Paramètres → Chaîne → Accès aux fonctionnalités → "
+                               "Valider votre numéro de téléphone. Le robot réessaie tout seul ensuite.")
+                return
             raise RuntimeError(self.masquer(f"{exc} {getattr(exc, 'corps', '')[:300]}")) from None
