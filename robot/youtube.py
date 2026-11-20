@@ -32,6 +32,10 @@ PORTEES = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis
 REDEMANDER = timedelta(hours=24)     # rappel du bouton d'autorisation tant qu'elle n'est pas donnée
 ATTENTE_APRES_CRENEAU = timedelta(minutes=15)
 ABANDON_APRES = timedelta(hours=36)  # Short introuvable sur la chaîne après ce délai : on prévient et on arrête
+VERIF_APRES = timedelta(hours=2)     # Short toujours absent 2 h après son heure : Buffer a raté, le robot le relance
+RELANCE_DANS = timedelta(minutes=15)
+RELANCES_MAX = 3
+# Pas d'envoi direct par l'API YouTube : sans audit Google, une vidéo envoyée ainsi reste bloquée en « privé ».
 FENETRE = timedelta(days=9)          # les couvertures restent 10 jours dans la release
 
 
@@ -153,6 +157,31 @@ class MiniaturesYouTube:
         return jeton
 
     # ------------------------------------------------------------------ miniatures
+    @staticmethod
+    def heure_yt(f: dict) -> datetime:
+        """Heure prévue sur YouTube : celle de la dernière relance, sinon le créneau."""
+        return datetime.fromisoformat(f.get("relance_yt") or f["creneau"])
+
+    def relancer(self, cle: str, f: dict) -> bool:
+        """Buffer n'a pas publié le Short : on le reprogramme chez Buffer dans 15 min (même titre, même texte)."""
+        n = f.get("relances_yt", 0)
+        if n >= RELANCES_MAX or not f.get("video_url") or f.get("nettoye") or not f.get("meta"):
+            return False
+        from .publieurs import ErreurPublication
+        date = self.o.maintenant() + RELANCE_DANS
+        try:
+            res = self.o.publieurs["youtube"].programmer(
+                self.o.publication(cle, f, dict(f["meta"], id=cle), "youtube", date))
+        except ErreurPublication as exc:
+            self.o.alerter(f"relance-{cle}", f"{cle} absent de YouTube, relance Buffer refusée : {exc}")
+            return False
+        f["relances_yt"] = n + 1
+        f["relance_yt"] = date.isoformat()
+        f["programme"]["youtube"] = {"id": res.id_distant, "message": res.message}
+        self.o.bot.envoyer_message(f"⚠️ <b>{echapper(cle)}</b> n'est pas sorti sur YouTube (Buffer a raté). "
+                                   f"Le robot l'a relancé : sortie dans 15 min (essai {n + 1}/{RELANCES_MAX}).")
+        return True
+
     def a_traiter(self) -> list[tuple[str, dict]]:
         maintenant = self.o.maintenant()
         sortie = []
@@ -161,7 +190,7 @@ class MiniaturesYouTube:
                 continue
             if "youtube" not in (f.get("programme") or {}) or not f.get("creneau"):
                 continue
-            creneau = datetime.fromisoformat(f["creneau"])
+            creneau = self.heure_yt(f)
             if creneau + ATTENTE_APRES_CRENEAU <= maintenant <= creneau + FENETRE:
                 sortie.append((cle, f))
         return sortie
@@ -207,9 +236,13 @@ class MiniaturesYouTube:
                 titre = _norm(f.get("titre", ""))[:100]
                 vid = videos.get(titre) or next((v for t, v in videos.items() if titre and (t.startswith(titre[:60]))), None)
                 if not vid:
-                    if self.o.maintenant() > datetime.fromisoformat(f["creneau"]) + ABANDON_APRES:
+                    retard = self.o.maintenant() - self.heure_yt(f)
+                    if retard > VERIF_APRES and self.relancer(cle, f):
+                        continue
+                    if retard > ABANDON_APRES or (retard > VERIF_APRES and f.get("relances_yt", 0) >= RELANCES_MAX):
                         f["miniature_yt"] = "introuvable"
-                        self.o.alerter(f"yt-{cle}", f"{cle} : Short introuvable sur la chaîne YouTube, miniature non posée.")
+                        self.o.alerter(f"yt-{cle}", f"{cle} : toujours absent de YouTube malgré les relances. "
+                                       "À vérifier dans Buffer.")
                     continue
                 image = self.couverture(cle)
                 if not image:

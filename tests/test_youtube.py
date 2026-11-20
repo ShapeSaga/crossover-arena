@@ -106,3 +106,33 @@ def test_sans_client_rien(monde, monkeypatch):
     monkeypatch.delenv("YOUTUBE_CLIENT_ID")
     MiniaturesYouTube(o).cycle()
     assert not s.messages and not s.poses
+
+
+def test_short_absent_relance_par_buffer(monde):
+    from robot.publieurs.base import Resultat
+    o, s, t = monde
+    s.kv["refresh"] = "RT-secret"
+    f = o.etat.episodes["EP050"]
+    f.update(titre="Autre combat #shorts", meta={"titre": "Autre combat #shorts", "hashtags": ["#shorts"]},
+             video_url="https://github.com/x/releases/download/videos/EP050.mp4")
+    envoyes = []
+
+    class FauxBuffer:
+        def programmer(self, pub):
+            envoyes.append(pub); return Resultat(id_distant=f"b{len(envoyes)}", message="ok")
+
+    o._publieurs = {"youtube": FauxBuffer()}
+    MiniaturesYouTube(o).cycle()                                       # 30 min après : on attend encore
+    assert not envoyes
+    t[0] += timedelta(hours=2)                                         # 2 h 30 après, toujours absent : relance
+    MiniaturesYouTube(o).cycle()
+    assert len(envoyes) == 1 and envoyes[0].plateforme == "youtube" and envoyes[0].titre == "Autre combat #shorts"
+    assert envoyes[0].date == t[0] + timedelta(minutes=15) and f["relances_yt"] == 1
+    assert f["programme"]["youtube"]["id"] == "b1"
+    MiniaturesYouTube(o).cycle()                                       # pas de 2e relance tout de suite
+    assert len(envoyes) == 1
+    t[0] += timedelta(hours=3)
+    MiniaturesYouTube(o).cycle(); t[0] += timedelta(hours=3); MiniaturesYouTube(o).cycle()
+    assert len(envoyes) == 3                                           # 3 essais au plus
+    t[0] += timedelta(hours=3); MiniaturesYouTube(o).cycle()
+    assert len(envoyes) == 3 and f["miniature_yt"] == "introuvable"

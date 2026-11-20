@@ -344,6 +344,17 @@ class Orchestrateur:
             finally:
                 self.etat.sauvegarder()                 # chaque réseau programmé est noté tout de suite
 
+    def publication(self, cle: str, f: dict, ep: dict, plateforme: str, date: datetime) -> Publication:
+        tags = ep.get("hashtags", [])
+        texte = self.legende(ep)
+        if plateforme == "youtube":
+            texte = f"{ep.get('youtube_description') or ep.get('legende', '')}\n\n{' '.join(tags)}".strip()
+        return Publication(cle=f"{cle}-{plateforme}", episode_id=cle, plateforme=plateforme, date=date, texte=texte,
+                           titre=(ep.get("titre") or cle)[:100], hashtags=tags, video_url=f["video_url"],
+                           contenu_ia=bool(self.conf["publication"]["contenu_ia"]), brouillon=bool(f.get("test")),
+                           miniature_ms=int(float(ep.get("miniature_s", 1.5)) * 1000),
+                           premier_commentaire=(ep.get("sondage") or {}).get("commentaire", ""))
+
     def publier_episode(self, cle: str, f: dict, ep: dict) -> None:
         test = bool(f.get("test"))
         if not f.get("video_url"):
@@ -369,19 +380,11 @@ class Orchestrateur:
             self.alerter(f"rate-{cle}", f"{cle} n'a pas pu partir à {planning.en_clair(datetime.fromisoformat(ancien), self.conf['cadence'])}"
                          f" : reprogrammé au {planning.en_clair(datetime.fromisoformat(f['creneau']), self.conf['cadence'])}.")
         date = datetime.fromisoformat(f["creneau"]) if f.get("creneau") else self.maintenant()
-        tags = ep.get("hashtags", [])
         for plateforme in self.conf["publication"]["plateformes"]:
             if plateforme in f["programme"] or f.get("abandon", {}).get(plateforme):
                 continue
             pub = self.publieurs[plateforme]
-            texte = self.legende(ep)
-            if plateforme == "youtube":
-                texte = f"{ep.get('youtube_description') or ep.get('legende', '')}\n\n{' '.join(tags)}".strip()
-            p = Publication(cle=f"{cle}-{plateforme}", episode_id=cle, plateforme=plateforme, date=date, texte=texte,
-                            titre=(ep.get("titre") or cle)[:100], hashtags=tags, video_url=f["video_url"],
-                            contenu_ia=bool(self.conf["publication"]["contenu_ia"]), brouillon=test,
-                            miniature_ms=int(float(ep.get("miniature_s", 1.5)) * 1000),
-                            premier_commentaire=(ep.get("sondage") or {}).get("commentaire", ""))
+            p = self.publication(cle, f, ep, plateforme, date)
             try:
                 place = pub.places_disponibles(plateforme) if not test else None
             except ErreurPublication as exc:
