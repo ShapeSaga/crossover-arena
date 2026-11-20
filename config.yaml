@@ -13,7 +13,7 @@ cadence:
   fuseau: "Europe/Paris"
   jours_avance: 7                  # une semaine de vidéos d'avance (demande de Chahine, 14/11)
   avance_min_heures: 3             # jamais d'envoi pour un créneau qui commence dans moins de 3 h
-  creneaux: ["12:00", "20:00"]     # 2 vidéos par jour (réglable ici, ex. ["12:00", "17:00", "21:00"])
+  creneaux: ["02:00", "21:00"]     # heure de Paris = 20 h et 15 h à New York (pics américains, étude du 21/11) ; 2 vidéos par jour (réglable ici, ex. ["12:00", "17:00", "21:00"])
   marge_minutes: 30
 
 validation:

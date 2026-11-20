@@ -100,7 +100,7 @@ def test_parcours_complet(monde):
         assert "isAiGenerated" not in json.dumps(p["metadata"].get("youtube", {}) | p["metadata"].get("instagram", {}))
     yt = [p for p in vrais if "youtube" in p["metadata"]][0]
     assert yt["metadata"]["youtube"]["title"] == "Titre EP001" and yt["metadata"]["youtube"]["madeForKids"] is False
-    assert o.etat.episodes["EP001"]["creneau"].startswith("2026-10-20T18:00")        # midi est à moins de 3 h : 20 h Paris = 18 h UTC
+    assert o.etat.episodes["EP001"]["creneau"].startswith("2026-10-20T19:00")        # 21 h Paris (été) = 19 h UTC
 
 
 def test_refus_et_double_clic(monde):
@@ -122,7 +122,7 @@ def test_deux_videos_deux_creneaux_differents(monde):
     c1 = o.prochain_creneau().astimezone(timezone.utc).isoformat()
     o.etat.episodes["X"] = {"statut": PROGRAMME, "creneau": c1}
     c2 = o.prochain_creneau().astimezone(timezone.utc).isoformat()
-    assert c1 != c2 and c1.startswith("2026-10-20T10:00") and c2.startswith("2026-10-20T18:00")   # 20 h à Paris (heure d été)
+    assert c1 != c2 and c1.startswith("2026-10-20T19:00") and c2.startswith("2026-10-21T00:00")   # 21 h puis 2 h à Paris (heure d'été)
 
 
 def test_pause(monde):
