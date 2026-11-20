@@ -499,7 +499,7 @@
      "message": "programmé pour 2026-11-19T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Dustox & Seaking vs Crobat & Trevenant… one hit could end it 🐛☠️ #shorts",
    "valide_le": "2026-11-15T13:27:36.998958+00:00",
@@ -766,5 +766,8 @@
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [],
+ "youtube": {
+  "demande_le": "2026-11-20T00:31:54.374720+00:00"
+ }
 }
