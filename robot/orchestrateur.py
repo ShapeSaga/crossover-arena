@@ -302,7 +302,7 @@ class Orchestrateur:
     def prochain_creneau(self) -> datetime:
         return self.creneaux_libres(1)[0]
 
-    def creneaux_libres(self, n: int) -> list[datetime]:
+    def creneaux_libres(self, n: int, apres: datetime | None = None) -> list[datetime]:
         """Les n prochains créneaux libres (12 h / 20 h par défaut, voir config.yaml), à partir de maintenant + marge."""
         out: list[datetime] = []
         tz = ZoneInfo(self.conf["cadence"]["fuseau"])
@@ -319,7 +319,7 @@ class Orchestrateur:
         for d in range(90):
             for hh, mm in heures:
                 dt = datetime.combine(now.date() + timedelta(days=d), time(hh, mm), tz)
-                if (dt >= now + marge and dt.astimezone(timezone.utc).isoformat() not in pris
+                if (dt >= max(now + marge, apres or now) and dt.astimezone(timezone.utc).isoformat() not in pris
                         and par_jour.get(dt.date(), 0) < MAX_YOUTUBE_JOUR):
                     par_jour[dt.date()] = par_jour.get(dt.date(), 0) + 1
                     out.append(dt)
@@ -422,6 +422,59 @@ class Orchestrateur:
             tete = "📝 Brouillons créés dans Buffer (test, rien de publié)" if test else "📅 Programmé"
             self.bot.envoyer_message(f"{tete} — <b>{echapper(cle)}</b>\n" + "\n".join(lignes), reponse_a=f["message_id"])
 
+    def replanifier(self) -> None:
+        """Les créneaux de config.yaml ont changé : les vidéos déjà confiées à Buffer passent sur les nouveaux horaires.
+        Chaque post Buffer est supprimé puis recréé par l'étape « publication » ; un Short YouTube relancé repart au
+        prochain créneau libre via l'étape « miniatures YouTube ». Une seule fois par changement d'horaires."""
+        voulus = sorted(self.conf["cadence"]["creneaux"])
+        if self.etat.donnees.get("creneaux_appliques") == voulus:
+            return
+        if self.etat.donnees.get("creneaux_appliques") is None and not self.etat.episodes:
+            self.etat.donnees["creneaux_appliques"] = voulus
+            return
+        tz = ZoneInfo(self.conf["cadence"]["fuseau"])
+        limite = self.maintenant() + timedelta(hours=float(self.conf["cadence"].get("avance_min_heures", 3)))
+        bon = lambda iso: datetime.fromisoformat(iso).astimezone(tz).strftime("%H:%M") in voulus
+        deplaces, echecs = [], []
+
+        def retirer(cle, plateformes, f):
+            for p in plateformes:
+                pid = (f["programme"].get(p) or {}).get("id")
+                if pid:
+                    self.publieurs[p].supprimer(pid)
+                    f["programme"].pop(p)
+
+        for cle, f in sorted(self.etat.episodes.items()):
+            if f.get("test"):
+                continue
+            try:
+                if f["statut"] == PROGRAMME and f.get("creneau") and datetime.fromisoformat(f["creneau"]) > limite                         and not bon(f["creneau"]):
+                    retirer(cle, list(f["programme"]), f)
+                    f["statut"] = VALIDE
+                    f["creneau"] = f["creneau_prevu"] = None
+                    deplaces.append(cle)
+                elif f.get("relance_yt") and datetime.fromisoformat(f["relance_yt"]) > limite and not bon(f["relance_yt"]):
+                    retirer(cle, ["youtube"], f)
+                    f["programme"]["youtube"] = {"id": "", "message": "replanifié"}
+                    f.pop("relance_yt")
+                    f["relances_yt"] = max(0, f.get("relances_yt", 1) - 1)
+                    deplaces.append(f"{cle} (YouTube)")
+            except ErreurPublication as exc:
+                echecs.append(f"{cle} : {exc}")
+            self.etat.sauvegarder()
+        # créneaux attribués dans l'ordre : les vidéos les plus anciennes d'abord
+        a_placer = [c for c in deplaces if "(" not in c]
+        for cle, dt in zip(a_placer, self.creneaux_libres(len(a_placer), limite) if a_placer else []):
+            self.etat.episodes[cle]["creneau"] = self.etat.episodes[cle]["creneau_prevu"] = dt.astimezone(timezone.utc).isoformat()
+        if not echecs:
+            self.etat.donnees["creneaux_appliques"] = voulus
+        if deplaces or echecs:
+            lignes = [f"• {echapper(c)} → {planning.en_clair(datetime.fromisoformat(self.etat.episodes[c]['creneau']), self.conf['cadence'])}"
+                      for c in a_placer]
+            lignes += [f"• {echapper(c)} → prochain créneau libre" for c in deplaces if "(" in c]
+            lignes += [f"⚠️ {echapper(e)}" for e in echecs]
+            self.bot.envoyer_message("🕘 <b>Nouveaux horaires appliqués</b> (" + " et ".join(voulus) + ")\n" + "\n".join(lignes))
+
     def echecs_fabrication(self) -> None:
         """Le générateur tourne avant le robot : s'il a échoué, Chahine doit le savoir (sinon rien n'arrive, sans explication)."""
         fichier = RACINE / "etat" / "echecs_fabrication.json"
@@ -463,7 +516,7 @@ class Orchestrateur:
         if manquants:
             raise SystemExit("Secrets manquants : " + ", ".join(manquants))
         for nom, fn in (("fabrication", self.echecs_fabrication), ("Telegram", self.lire_telegram), ("délais", self.gerer_delais),
-                        ("envoi des nouvelles vidéos", self.envoyer_nouveaux),
+                        ("nouveaux horaires", self.replanifier), ("envoi des nouvelles vidéos", self.envoyer_nouveaux),
                         ("publication", self.publier_valides), ("miniatures YouTube", self.miniatures_youtube),
                         ("ménage", self.menage)):
             self._etape(nom, fn)

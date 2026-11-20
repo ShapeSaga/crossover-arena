@@ -87,6 +87,10 @@ class Publieur(ABC):
         """Places libres dans la file distante (None = inconnu / illimité)."""
         return None
 
+    def supprimer(self, id_distant: str) -> None:
+        """Retire un post programmé (si le service le permet)."""
+        raise ErreurPublication(f"{self.nom} : suppression non gérée", temporaire=False)
+
     def statistiques(self, depuis: datetime) -> dict | None:
         """Statistiques gratuites disponibles (None si non géré)."""
         return None

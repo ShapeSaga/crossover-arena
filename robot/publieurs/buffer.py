@@ -42,6 +42,11 @@ M_CREER = """mutation Creer($input: CreatePostInput!) {
 }"""
 
 
+M_SUPPRIMER = """mutation Supprimer($input: DeletePostInput!) {
+  deletePost(input: $input) { __typename ... on DeletePostSuccess { id } }
+}"""
+
+
 class PublieurBuffer(Publieur):
     nom = "buffer"
     programmation_distante = True
@@ -176,6 +181,12 @@ class PublieurBuffer(Publieur):
             log.info("Buffer : %s %s sur %s (post %s)", pub.episode_id, quand, pub.plateforme, post["id"])
             return Resultat(id_distant=post["id"], message=quand)
         raise ErreurPublication(f"Buffer a refusé le post : {res.get('message', res)}", temporaire=False)
+
+    def supprimer(self, id_distant: str) -> None:
+        """Retire un post programmé de Buffer (ne touche pas une vidéo déjà publiée sur le réseau)."""
+        res = self.gql(M_SUPPRIMER, {"input": {"id": id_distant}}, tentatives=1)["deletePost"]
+        if res.get("__typename") != "DeletePostSuccess":
+            raise ErreurPublication(f"Buffer n'a pas supprimé le post {id_distant} : {res}", temporaire=False)
 
     def statistiques(self, depuis: datetime) -> dict | None:
         resultat: dict = {}
