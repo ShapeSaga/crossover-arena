@@ -307,6 +307,7 @@ class Orchestrateur:
         tz = ZoneInfo(self.conf["cadence"]["fuseau"])
         now = self.maintenant().astimezone(tz)
         pris = {f.get("creneau") or f.get("creneau_prevu") for f in self.etat.episodes.values() if f["statut"] in planning.ACTIFS}
+        pris |= {f["relance_yt"] for f in self.etat.episodes.values() if f.get("relance_yt")}   # Short YouTube relancé
         marge = timedelta(minutes=self.conf["cadence"]["marge_minutes"])
         heures = sorted(tuple(int(x) for x in h.split(":")) for h in self.conf["cadence"]["creneaux"])
         for d in range(90):

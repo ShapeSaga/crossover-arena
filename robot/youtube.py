@@ -18,11 +18,12 @@ import logging
 import os
 import re
 import unicodedata
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlencode
 
 import requests
 
+from . import planning
 from .etat import PROGRAMME, PUBLIE
 from .reseau import ErreurHTTP, requete
 from .telegram_bot import echapper
@@ -33,7 +34,6 @@ REDEMANDER = timedelta(hours=24)     # rappel du bouton d'autorisation tant qu'e
 ATTENTE_APRES_CRENEAU = timedelta(minutes=15)
 ABANDON_APRES = timedelta(hours=36)  # Short introuvable sur la chaîne après ce délai : on prévient et on arrête
 VERIF_APRES = timedelta(hours=2)     # Short toujours absent 2 h après son heure : Buffer a raté, le robot le relance
-RELANCE_DANS = timedelta(minutes=15)
 RELANCES_MAX = 3
 # Pas d'envoi direct par l'API YouTube : sans audit Google, une vidéo envoyée ainsi reste bloquée en « privé ».
 FENETRE = timedelta(days=9)          # les couvertures restent 10 jours dans la release
@@ -163,12 +163,13 @@ class MiniaturesYouTube:
         return datetime.fromisoformat(f.get("relance_yt") or f["creneau"])
 
     def relancer(self, cle: str, f: dict) -> bool:
-        """Buffer n'a pas publié le Short : on le reprogramme chez Buffer dans 15 min (même titre, même texte)."""
+        """Buffer n'a pas publié le Short : on le reprogramme chez Buffer au prochain créneau libre (même titre, même texte).
+        Pas « tout de suite » : Buffer refuse plus de 2 Shorts YouTube par jour, et les créneaux du jour sont déjà pris."""
         n = f.get("relances_yt", 0)
         if n >= RELANCES_MAX or not f.get("video_url") or f.get("nettoye") or not f.get("meta"):
             return False
         from .publieurs import ErreurPublication
-        date = self.o.maintenant() + RELANCE_DANS
+        date = self.o.prochain_creneau().astimezone(timezone.utc)
         try:
             res = self.o.publieurs["youtube"].programmer(
                 self.o.publication(cle, f, dict(f["meta"], id=cle), "youtube", date))
@@ -181,7 +182,8 @@ class MiniaturesYouTube:
         f["relance_yt"] = date.isoformat()
         f["programme"]["youtube"] = {"id": res.id_distant, "message": res.message}
         self.o.bot.envoyer_message(f"⚠️ <b>{echapper(cle)}</b> n'est pas sorti sur YouTube (Buffer a raté). "
-                                   f"Le robot l'a relancé : sortie dans 15 min (essai {n + 1}/{RELANCES_MAX}).")
+                                   f"Le robot l'a relancé au prochain créneau libre : {echapper(planning.en_clair(date, self.o.conf['cadence']))} "
+                                   f"(essai {n + 1}/{RELANCES_MAX}).")
         return True
 
     def a_traiter(self) -> list[tuple[str, dict]]:

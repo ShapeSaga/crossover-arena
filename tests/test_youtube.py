@@ -125,14 +125,15 @@ def test_short_absent_relance_par_buffer(monde):
     MiniaturesYouTube(o).cycle()                                       # 30 min après : on attend encore
     assert not envoyes
     t[0] += timedelta(hours=2)                                         # 2 h 30 après, toujours absent : relance
+    attendu = o.prochain_creneau().astimezone(timezone.utc)
     MiniaturesYouTube(o).cycle()
     assert len(envoyes) == 1 and envoyes[0].plateforme == "youtube" and envoyes[0].titre == "Autre combat #shorts"
-    assert envoyes[0].date == t[0] + timedelta(minutes=15) and f["relances_yt"] == 1
-    assert f["programme"]["youtube"]["id"] == "b1"
+    assert envoyes[0].date == attendu and f["relances_yt"] == 1 and f["programme"]["youtube"]["id"] == "b1"
+    assert o.prochain_creneau().astimezone(timezone.utc) != attendu    # créneau bloqué pour les vidéos suivantes
     MiniaturesYouTube(o).cycle()                                       # pas de 2e relance tout de suite
     assert len(envoyes) == 1
-    t[0] += timedelta(hours=3)
-    MiniaturesYouTube(o).cycle(); t[0] += timedelta(hours=3); MiniaturesYouTube(o).cycle()
+    for _ in range(2):                                                 # toujours absent 3 h après chaque relance
+        t[0] = datetime.fromisoformat(f["relance_yt"]) + timedelta(hours=3); MiniaturesYouTube(o).cycle()
     assert len(envoyes) == 3                                           # 3 essais au plus
-    t[0] += timedelta(hours=3); MiniaturesYouTube(o).cycle()
+    t[0] = datetime.fromisoformat(f["relance_yt"]) + timedelta(hours=3); MiniaturesYouTube(o).cycle()
     assert len(envoyes) == 3 and f["miniature_yt"] == "introuvable"
