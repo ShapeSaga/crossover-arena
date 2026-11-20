@@ -24,6 +24,7 @@ from .publieurs import ErreurPublication, Publication, creer_publieurs
 from .telegram_bot import BotTelegram, echapper
 
 log = logging.getLogger(__name__)
+MAX_YOUTUBE_JOUR = 2                    # limite Buffer (offre gratuite) : 2 Shorts YouTube par jour et par chaîne
 NOMS = {"tiktok": "TikTok", "youtube": "YouTube", "instagram": "Instagram"}
 META = ("id", "titre", "legende", "youtube_description", "hashtags", "miniature_s", "sondage", "test")
 FENETRE_BUFFER = timedelta(days=4)   # offre gratuite : 10 posts en attente par réseau -> on ne confie à Buffer que 4 jours
@@ -310,10 +311,17 @@ class Orchestrateur:
         pris |= {f["relance_yt"] for f in self.etat.episodes.values() if f.get("relance_yt")}   # Short YouTube relancé
         marge = timedelta(minutes=self.conf["cadence"]["marge_minutes"])
         heures = sorted(tuple(int(x) for x in h.split(":")) for h in self.conf["cadence"]["creneaux"])
+        par_jour = {}                                   # Buffer refuse plus de 2 Shorts YouTube par jour
+        for x in pris:
+            if x:
+                j = datetime.fromisoformat(x).astimezone(tz).date()
+                par_jour[j] = par_jour.get(j, 0) + 1
         for d in range(90):
             for hh, mm in heures:
                 dt = datetime.combine(now.date() + timedelta(days=d), time(hh, mm), tz)
-                if dt >= now + marge and dt.astimezone(timezone.utc).isoformat() not in pris:
+                if (dt >= now + marge and dt.astimezone(timezone.utc).isoformat() not in pris
+                        and par_jour.get(dt.date(), 0) < MAX_YOUTUBE_JOUR):
+                    par_jour[dt.date()] = par_jour.get(dt.date(), 0) + 1
                     out.append(dt)
                     if len(out) == n:
                         return out

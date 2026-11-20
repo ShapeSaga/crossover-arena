@@ -137,3 +137,15 @@ def test_short_absent_relance_par_buffer(monde):
     assert len(envoyes) == 3                                           # 3 essais au plus
     t[0] = datetime.fromisoformat(f["relance_yt"]) + timedelta(hours=3); MiniaturesYouTube(o).cycle()
     assert len(envoyes) == 3 and f["miniature_yt"] == "introuvable"
+
+
+def test_jour_avec_relance_garde_2_shorts_max(monde):
+    o, s, t = monde
+    o.etat.episodes["EP050"]["statut"] = "publie"
+    tz = __import__("zoneinfo").ZoneInfo(o.conf["cadence"]["fuseau"])
+    libres = o.creneaux_libres(2)
+    jour = libres[0].date()
+    o.etat.episodes["EP050"]["relance_yt"] = datetime.combine(jour, datetime.min.time().replace(hour=12), tz).astimezone(timezone.utc).isoformat()
+    apres = o.creneaux_libres(3)
+    from collections import Counter
+    assert max(Counter(d.date() for d in apres).values()) <= 2 and sum(d.date() == jour for d in apres) <= 1
