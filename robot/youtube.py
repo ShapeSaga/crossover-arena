@@ -173,6 +173,8 @@ class MiniaturesYouTube:
             res = self.o.publieurs["youtube"].programmer(
                 self.o.publication(cle, f, dict(f["meta"], id=cle), "youtube", date))
         except ErreurPublication as exc:
+            f["relance_erreur"] = self.masquer(str(exc))[:300]
+            log.warning("Relance Buffer %s refusée : %s", cle, f["relance_erreur"])
             self.o.alerter(f"relance-{cle}", f"{cle} absent de YouTube, relance Buffer refusée : {exc}")
             return False
         f["relances_yt"] = n + 1
