@@ -1,5 +1,7 @@
 {
- "alertes": {},
+ "alertes": {
+  "etape-miniatures YouTube": "2026-11-20T00:41:50.443048+00:00"
+ },
  "correctif_instagram": 1,
  "diag_telegram": {
   "clics_recus": 0,
@@ -768,6 +770,7 @@
  "pause": false,
  "relais_a_confirmer": [],
  "youtube": {
-  "demande_le": "2026-11-20T00:31:54.374720+00:00"
+  "autorise_le": "2026-11-20T00:41:48.428773+00:00",
+  "demande_le": null
  }
 }
