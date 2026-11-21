@@ -467,6 +467,7 @@
     "titre": "Mega Lucario vs Archaludon… the type chart says one thing… 🥊⚙️ #shorts",
     "youtube_description": "Two Pokémon walk into Quarry. Only one Pokémon walks out.\nFighting against steel should be easy for Mega Lucario… unless Archaludon has other plans.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🥊 Mega Lucario or ⚙️ Archaludon?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6af9b34c76c23bf1c780e479",
@@ -488,7 +489,8 @@
    "test": false,
    "titre": "Mega Lucario vs Archaludon… the type chart says one thing… 🥊⚙️ #shorts",
    "valide_le": "2026-11-15T13:27:36.624839+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP011.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP011.mp4",
+   "youtube_id": "OV9u7WXIxcs"
   },
   "EP012": {
    "creneau": "2026-11-19T19:00:00+00:00",
@@ -663,6 +665,10 @@
     }
    },
    "statut": "programme",
+   "story": {
+    "id": "6b00f9905e993799d843b79a",
+    "message": "programmé pour 2026-11-21T21:00:00.000Z"
+   },
    "test": false,
    "titre": "Regieleki vs Urshifu… a real coin flip ⚡🥊 #shorts",
    "valide_le": "2026-11-15T13:27:37.591823+00:00",
@@ -707,6 +713,10 @@
     }
    },
    "statut": "programme",
+   "story": {
+    "id": "6b00f9915e993799d843b7df",
+    "message": "programmé pour 2026-11-22T02:00:00.000Z"
+   },
    "test": false,
    "titre": "Masquerain & Wyrdeer vs Mega Steelix & Bellibolt… the type chart says one thing… 🐛⚙️ #shorts",
    "valide_le": "2026-11-15T13:27:37.800480+00:00",
@@ -749,6 +759,10 @@
     }
    },
    "statut": "programme",
+   "story": {
+    "id": "6b00f992dd205ed779af980f",
+    "message": "programmé pour 2026-11-22T21:00:00.000Z"
+   },
    "test": false,
    "titre": "Electivire vs Mega Lucario… pure power, no excuses ⚡🥊 #shorts",
    "valide_le": "2026-11-15T13:27:38.197534+00:00",
@@ -793,6 +807,10 @@
     }
    },
    "statut": "programme",
+   "story": {
+    "id": "6b00f9935e993799d843b824",
+    "message": "programmé pour 2026-11-23T02:00:00.000Z"
+   },
    "test": false,
    "titre": "Scolipede & Palafin vs Mega Excadrill & Gholdengo… one hit could end it 🐛⛏️ #shorts",
    "valide_le": "2026-11-15T13:27:37.997899+00:00",
