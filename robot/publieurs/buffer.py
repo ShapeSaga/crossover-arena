@@ -142,6 +142,8 @@ class PublieurBuffer(Publieur):
                 "notifySubscribers": True,
                 "embeddable": True,
             }}
+        if pub.plateforme == "instagram" and pub.story:
+            return {"instagram": {"type": "story", "shouldShareToFeed": False}}
         if pub.plateforme == "instagram":
             # firstComment est réservé aux plans payants de Buffer : le sondage est déjà dans la légende
             return {"instagram": {"type": "reel", "shouldShareToFeed": True}}
@@ -156,7 +158,7 @@ class PublieurBuffer(Publieur):
         au_plus_tot = datetime.now(timezone.utc) + timedelta(minutes=5)
         date = max(pub.date, au_plus_tot)
         video: dict = {"url": pub.video_url}
-        if pub.plateforme in ("tiktok", "instagram"):
+        if pub.plateforme in ("tiktok", "instagram") and not pub.story:
             video["metadata"] = {"thumbnailOffset": int(pub.miniature_ms)}
         entree = {
             "channelId": canal["id"],

@@ -25,6 +25,7 @@ from .telegram_bot import BotTelegram, echapper
 
 log = logging.getLogger(__name__)
 MAX_YOUTUBE_JOUR = 2                    # limite Buffer (offre gratuite) : 2 Shorts YouTube par jour et par chaîne
+STORY_APRES = timedelta(hours=1)        # story Instagram « NEW REEL » après le Reel
 NOMS = {"tiktok": "TikTok", "youtube": "YouTube", "instagram": "Instagram"}
 META = ("id", "titre", "legende", "youtube_description", "hashtags", "miniature_s", "sondage", "test")
 FENETRE_BUFFER = timedelta(days=4)   # offre gratuite : 10 posts en attente par réseau -> on ne confie à Buffer que 4 jours
@@ -416,11 +417,38 @@ class Orchestrateur:
                 continue
             f["programme"][plateforme] = {"id": res.id_distant, "message": res.message}
             self.etat.sauvegarder()
+        self.programmer_story(cle, f, ep, date)
         if all(p in f["programme"] or f.get("abandon", {}).get(p) for p in self.conf["publication"]["plateformes"]):
             f["statut"] = BROUILLON if test else PROGRAMME
             lignes = [f"• {NOMS[p]} : {echapper(r['message'])}" for p, r in f["programme"].items()]
             tete = "📝 Brouillons créés dans Buffer (test, rien de publié)" if test else "📅 Programmé"
             self.bot.envoyer_message(f"{tete} — <b>{echapper(cle)}</b>\n" + "\n".join(lignes), reponse_a=f["message_id"])
+
+    def programmer_story(self, cle: str, f: dict, ep: dict, date: datetime) -> None:
+        """Story Instagram « NEW REEL » 1 h après le Reel : vidéo {cle}_story.mp4 fabriquée par le PC
+        (modèle du profil + Reel qui joue dans le cadre). Sans lien cliquable : l'API ne le permet pas."""
+        if "instagram" not in f["programme"] or f.get("story") or f.get("story_abandon"):
+            return
+        nom = f"{cle}_story.mp4"
+        try:
+            asset = next((a for a in self.hebergeur.lister() if a["name"] == nom), None)
+        except Exception as exc:  # noqa: BLE001  (la story ne doit jamais bloquer le Reel)
+            log.warning("Story %s : liste des fichiers indisponible (%s)", cle, exc)
+            return
+        if not asset:
+            return                                      # vidéo d'avant les stories : rien à faire
+        p = self.publication(cle, f, ep, "instagram", date + STORY_APRES)
+        p.cle, p.texte, p.video_url, p.story = f"{cle}-story", "New reel 🔥", asset["browser_download_url"], True
+        try:
+            res = self.publieurs["instagram"].programmer(p)
+        except ErreurPublication as exc:
+            n = f.get("story_refus", 0) + 1
+            f["story_refus"] = n
+            if n >= ABANDON_APRES:
+                f["story_abandon"] = True
+            self.alerter(f"story-{cle}", f"{cle} : story Instagram refusée par Buffer : {exc}")
+            return
+        f["story"] = {"id": res.id_distant, "message": res.message}
 
     def replanifier(self) -> None:
         """Les créneaux de config.yaml ont changé : les vidéos déjà confiées à Buffer passent sur les nouveaux horaires.
@@ -450,6 +478,9 @@ class Orchestrateur:
             try:
                 if f["statut"] == PROGRAMME and f.get("creneau") and datetime.fromisoformat(f["creneau"]) > limite                         and not bon(f["creneau"]):
                     retirer(cle, list(f["programme"]), f)
+                    if (f.get("story") or {}).get("id"):
+                        self.publieurs["instagram"].supprimer(f["story"]["id"])
+                    f.pop("story", None)
                     f["statut"] = VALIDE
                     f["creneau"] = f["creneau_prevu"] = None
                     deplaces.append(cle)
@@ -498,7 +529,7 @@ class Orchestrateur:
                 if self.maintenant() > ref + timedelta(days=jours):
                     try:
                         self.hebergeur.supprimer_nom(f"{cle}.mp4"); f["nettoye"] = True
-                        for annexe in (f"{cle}.json", f"{cle}.jpg", f"{cle}_couverture.jpg"):   # fichiers du PC
+                        for annexe in (f"{cle}.json", f"{cle}.jpg", f"{cle}_couverture.jpg", f"{cle}_story.mp4"):   # fichiers du PC
                             self.hebergeur.supprimer_nom(annexe)
                     except ErreurHebergement as exc:
                         log.warning("Nettoyage de %s impossible : %s", cle, exc)
