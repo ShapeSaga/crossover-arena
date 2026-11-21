@@ -30,6 +30,23 @@ NOMS = {"tiktok": "TikTok", "youtube": "YouTube", "instagram": "Instagram"}
 META = ("id", "titre", "legende", "youtube_description", "hashtags", "miniature_s", "sondage", "test")
 FENETRE_BUFFER = timedelta(days=4)   # offre gratuite : 10 posts en attente par réseau -> on ne confie à Buffer que 4 jours
 ABANDON_APRES = 3                    # refus définitifs de Buffer avant d'abandonner un réseau pour un épisode
+# 21/11 (Chahine) : sur toutes les vidéos, demander bien en évidence quel combat les spectateurs veulent voir
+APPEL = ("━━━━━━━━━━━━━━━\n"
+         "🎯 YOUR TURN: which battle do you want to see next?\n"
+         "👇 Write your matchup in the comments (like Charizard vs Gyarados). I pick the next battles from your ideas!\n"
+         "━━━━━━━━━━━━━━━")
+
+
+def avec_appel(texte: str) -> str:
+    """Ajoute l'appel « quel combat voulez-vous ? » avant les liens / hashtags (une seule fois)."""
+    if not texte or "YOUR TURN" in texte:
+        return texte
+    lignes = texte.split("\n")
+    for i, ligne in enumerate(lignes):                   # avant « 📲 suivez-nous » ou, sinon, avant les hashtags
+        if i > 0 and (ligne.startswith("📲") or ligne.startswith("#")):
+            debut = "\n".join(lignes[:i]).rstrip()
+            return debut + "\n\n" + APPEL + "\n\n" + "\n".join(lignes[i:])
+    return texte.rstrip() + "\n\n" + APPEL
 
 
 class Orchestrateur:
@@ -95,7 +112,7 @@ class Orchestrateur:
 
     def legende(self, ep: dict) -> str:
         tags = " ".join(ep.get("hashtags", []))
-        return f"{ep.get('legende', '')}\n\n{tags}".strip()
+        return avec_appel(f"{ep.get('legende', '')}\n\n{tags}".strip())
 
     # ------------------------------------------------------------------ Telegram
     def adresse_relais(self) -> str | None:
@@ -362,7 +379,7 @@ class Orchestrateur:
         tags = ep.get("hashtags", [])
         texte = self.legende(ep)
         if plateforme == "youtube":
-            texte = f"{ep.get('youtube_description') or ep.get('legende', '')}\n\n{' '.join(tags)}".strip()
+            texte = avec_appel(f"{ep.get('youtube_description') or ep.get('legende', '')}\n\n{' '.join(tags)}".strip())
         return Publication(cle=f"{cle}-{plateforme}", episode_id=cle, plateforme=plateforme, date=date, texte=texte,
                            titre=(ep.get("titre") or cle)[:100], hashtags=tags, video_url=f["video_url"],
                            contenu_ia=bool(self.conf["publication"]["contenu_ia"]), brouillon=bool(f.get("test")),
