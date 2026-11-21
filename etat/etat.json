@@ -650,6 +650,7 @@
     "titre": "Regieleki vs Urshifu… a real coin flip ⚡🥊 #shorts",
     "youtube_description": "This battle in Giant Dojo had me on the edge of my seat.\nRegieleki vs Urshifu with no type advantage either way. Honestly, anything can happen.\n\nBefore you watch the end, tell me in the comments who you're backing:\n⚡ Regieleki or 🥊 Urshifu?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6b00dca0dd205ed779a5ef84",
@@ -664,7 +665,7 @@
      "message": "programmé pour 2026-11-21T20:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "story": {
     "id": "6b00f9905e993799d843b79a",
     "message": "programmé pour 2026-11-21T21:00:00.000Z"
@@ -672,7 +673,8 @@
    "test": false,
    "titre": "Regieleki vs Urshifu… a real coin flip ⚡🥊 #shorts",
    "valide_le": "2026-11-15T13:27:37.591823+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP015.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP015.mp4",
+   "youtube_id": "gL6tqFkE5zs"
   },
   "EP016": {
    "creneau": "2026-11-22T01:00:00+00:00",
