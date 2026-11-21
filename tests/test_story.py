@@ -41,3 +41,15 @@ def test_pas_de_story_sans_video_story(monde):
     b = preparer(o, t, ["EP020.mp4"])
     o.publier_valides()
     assert not [p for p in b.crees if p.story] and "story" not in o.etat.episodes["EP020"]
+
+
+def test_story_pour_video_deja_programmee(monde):
+    from robot.etat import PROGRAMME
+    o, s, t = monde
+    b = preparer(o, t, ["EP020.mp4", "EP020_story.mp4"])
+    f = o.etat.episodes["EP020"]
+    f["statut"], f["programme"] = PROGRAMME, {p: {"id": p} for p in ("youtube", "tiktok", "instagram")}
+    o.publier_valides()
+    assert [p.date.isoformat() for p in b.crees if p.story] == ["2026-11-21T21:00:00+00:00"]
+    o.publier_valides()
+    assert len(b.crees) == 1

@@ -339,6 +339,10 @@ class Orchestrateur:
                     f["statut"] = VALIDE
             self.etat.donnees["correctif_instagram"] = 1
         prets = {e["id"]: e for e in self.episodes_prets()}
+        for cle, f in sorted(self.etat.episodes.items()):     # vidéos programmées avant les stories (21/11)
+            if f["statut"] == PROGRAMME and not f.get("test") and f.get("creneau") and f.get("meta")                     and not f.get("story") and datetime.fromisoformat(f["creneau"]) > self.maintenant():
+                self.programmer_story(cle, f, dict(f["meta"], id=cle), datetime.fromisoformat(f["creneau"]))
+                self.etat.sauvegarder()
         for cle, f in sorted(self.etat.episodes.items()):
             if f["statut"] != VALIDE:
                 continue
