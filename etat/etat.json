@@ -700,6 +700,7 @@
     "titre": "Masquerain & Wyrdeer vs Mega Steelix & Bellibolt… the type chart says one thing… 🐛⚙️ #shorts",
     "youtube_description": "They walk into Stade d'Acier. Only one team walks out.\nEveryone's going to say Mega Steelix & Bellibolt because of the type matchup. I'm not so sure about that.\n\nBefore you watch the end, tell me in the comments who you're backing:\n🐛 Masquerain & Wyrdeer or ⚙️ Mega Steelix & Bellibolt?\n\nNew battle every day at noon and 8 PM. If you like these, subscribe, there's a lot more coming."
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6b00dca2d9cbb430a10641d9",
@@ -714,7 +715,7 @@
      "message": "programmé pour 2026-11-22T01:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "story": {
     "id": "6b00f9915e993799d843b7df",
     "message": "programmé pour 2026-11-22T02:00:00.000Z"
@@ -722,7 +723,8 @@
    "test": false,
    "titre": "Masquerain & Wyrdeer vs Mega Steelix & Bellibolt… the type chart says one thing… 🐛⚙️ #shorts",
    "valide_le": "2026-11-15T13:27:37.800480+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP016.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP016.mp4",
+   "youtube_id": "xRZnHHX2ZOU"
   },
   "EP017": {
    "creneau": "2026-11-22T20:00:00+00:00",
