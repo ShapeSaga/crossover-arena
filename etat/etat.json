@@ -12,7 +12,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 7,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -849,6 +849,10 @@
      "id": "6b05e992ea43dfa94f1d7a0a",
      "message": "programmé pour 2026-11-25T01:00:00.000Z"
     },
+    "tiktok": {
+     "id": "6b05ebc2ea027c5314b339fc",
+     "message": "programmé pour 2026-11-25T01:00:00.000Z"
+    },
     "youtube": {
      "id": "6b05e991ea027c5314b25e88",
      "message": "programmé pour 2026-11-25T01:00:00.000Z"
@@ -857,7 +861,7 @@
    "refus": {
     "tiktok": 1
    },
-   "statut": "valide",
+   "statut": "programme",
    "story": {
     "id": "6b05e9943fa14bcb90bd3758",
     "message": "programmé pour 2026-11-25T02:00:00.000Z"
@@ -999,19 +1003,30 @@
    "titre": "Solgaleo vs Mega Gyarados… is the favorite really safe? 🔮💧 #shorts",
    "valide_le": "2026-11-24T19:45:51.708478+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP025.mp4"
+  },
+  "EP026": {
+   "creneau_prevu": "2026-11-25T20:00:00+00:00",
+   "envoye_le": "2026-11-24T19:55:44.043198+00:00",
+   "message_id": 153,
+   "meta": {
+    "hashtags": [],
+    "id": "EP026",
+    "legende": "They walk into Toxic Stadium. Only one team walks out.\n\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battles every day at 3 PM and 8 PM ET ⚡\n📲 Crossover Arena is on YouTube, TikTok & Instagram — links in bio 🔗\n\n#pokemon #pokemoncommunity #gengar #videogames #gamergram",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Unfezant & Mega Victreebel vs Gengar & Mega Tyranitar… nobody's safe in this one ⭐👻 #shorts",
+    "youtube_description": "They walk into Toxic Stadium. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gengar #videogames #gamergram #pokemonfan #gamingislife #pokemontrainer"
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Unfezant & Mega Victreebel vs Gengar & Mega Tyranitar… nobody's safe in this one ⭐👻 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP026.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [
-  976274039,
-  976274040,
-  976274041,
-  976274042,
-  976274043,
-  976274044,
-  976274045
- ],
+ "relais_a_confirmer": [],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
