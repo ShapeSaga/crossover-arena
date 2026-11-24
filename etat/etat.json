@@ -13,7 +13,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 1,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1186,13 +1186,30 @@
    "test": false,
    "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP031.mp4"
+  },
+  "EP032": {
+   "creneau_prevu": "2026-11-29T01:00:00+00:00",
+   "envoye_le": "2026-11-24T20:35:44.179180+00:00",
+   "message_id": 180,
+   "meta": {
+    "hashtags": [],
+    "id": "EP032",
+    "legende": "This battle in Toxic Stadium had me on the edge of my seat.\n\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. Follow so you don't miss the next one.\n📲 Crossover Arena is on YouTube, TikTok & Instagram — links in bio 🔗\n\n#pokemon #pokemoncommunity #videogames #pokemonfan #gamergram",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Mega Scizor & Swanna vs Bastiodon & Ceruledge… nobody's safe in this one 🐛🪨 #shorts",
+    "youtube_description": "This battle in Toxic Stadium had me on the edge of my seat.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #videogames #pokemonfan #gamergram #gaming #gamingchannel #gamingislife"
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Mega Scizor & Swanna vs Bastiodon & Ceruledge… nobody's safe in this one 🐛🪨 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP032.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [
-  976274049
- ],
+ "relais_a_confirmer": [],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
