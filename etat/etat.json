@@ -1,6 +1,7 @@
 {
  "alertes": {
   "etape-miniatures YouTube": "2026-11-20T16:56:53.711148+00:00",
+  "file-instagram": "2026-11-24T20:25:59.442097+00:00",
   "pub-EP019-tiktok": "2026-11-24T19:46:25.216670+00:00",
   "relance-EP011": "2026-11-20T06:18:27.429198+00:00",
   "stock-bas": "2026-11-24T19:45:54.281142+00:00",
@@ -12,7 +13,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 3,
+  "clics_recus": 1,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1119,6 +1120,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP028.mp4"
   },
   "EP029": {
+   "creneau": "2026-11-27T01:00:00+00:00",
    "creneau_prevu": "2026-11-27T01:00:00+00:00",
    "envoye_le": "2026-11-24T20:15:47.576153+00:00",
    "message_id": 165,
@@ -1131,19 +1133,65 @@
     "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
     "youtube_description": "Two Pokémon walk into Dragon Sanctuary. Only one Pokémon walks out.\nNeither side has the type edge, which makes this one a real coin flip.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gaming #gamergram #videogames #gamingislife #pokemontrainer"
    },
+   "programme": {
+    "tiktok": {
+     "id": "6b05f2d678379dac140622f8",
+     "message": "programmé pour 2026-11-27T01:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b05f2d7c966bca3fadb9838",
+     "message": "programmé pour 2026-11-27T01:00:00.000Z"
+    }
+   },
+   "statut": "valide",
+   "test": false,
+   "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
+   "valide_le": "2026-11-24T20:25:48.215264+00:00",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP029.mp4"
+  },
+  "EP030": {
+   "creneau_prevu": "2026-11-27T20:00:00+00:00",
+   "envoye_le": "2026-11-24T20:25:52.329505+00:00",
+   "message_id": 172,
+   "meta": {
+    "hashtags": [],
+    "id": "EP030",
+    "legende": "They walk into Central Stadium. Only one team walks out.\n\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nHot take: Zacian is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. Follow so you don't miss the next one.\n📲 Crossover Arena is on YouTube, TikTok & Instagram — links in bio 🔗\n\n#pokemon #pokemoncommunity #gaming #gamingislife #videogames",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
+    "youtube_description": "They walk into Central Stadium. Only one team walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nHot take: Zacian is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #gamingislife #videogames #gamingchannel #gamergram #pokemontrainer"
+   },
    "programme": {},
    "statut": "envoye",
    "test": false,
-   "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP029.mp4"
+   "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP030.mp4"
+  },
+  "EP031": {
+   "creneau_prevu": "2026-11-28T20:00:00+00:00",
+   "envoye_le": "2026-11-24T20:25:56.507934+00:00",
+   "message_id": 175,
+   "meta": {
+    "hashtags": [],
+    "id": "EP031",
+    "legende": "Mew vs Dialga in Sky Stadium. I did not expect this one to go like that.\n\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battles every day at 3 PM and 8 PM ET ⚡\n📲 Crossover Arena is on YouTube, TikTok & Instagram — links in bio 🔗\n\n#pokemon #pokemoncommunity #pokemonfan #pokemontrainer #gamingchannel",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
+    "youtube_description": "Mew vs Dialga in Sky Stadium. I did not expect this one to go like that.\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #pokemontrainer #gamingchannel #gamergram #videogames #gaming"
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP031.mp4"
   }
  },
  "offset": 0,
  "pause": false,
  "relais_a_confirmer": [
-  976274046,
-  976274047,
-  976274048
+  976274049
  ],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
