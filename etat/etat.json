@@ -12,7 +12,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 3,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1005,6 +1005,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP025.mp4"
   },
   "EP026": {
+   "creneau": "2026-11-25T20:00:00+00:00",
    "creneau_prevu": "2026-11-25T20:00:00+00:00",
    "envoye_le": "2026-11-24T19:55:44.043198+00:00",
    "message_id": 153,
@@ -1017,13 +1018,32 @@
     "titre": "Unfezant & Mega Victreebel vs Gengar & Mega Tyranitar… nobody's safe in this one ⭐👻 #shorts",
     "youtube_description": "They walk into Toxic Stadium. Only one team walks out.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gengar #videogames #gamergram #pokemonfan #gamingislife #pokemontrainer"
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6b05f077f86f2594b87f154b",
+     "message": "programmé pour 2026-11-25T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b05f076d5ccaecbfb843d10",
+     "message": "programmé pour 2026-11-25T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b05f076ad5aa59f729a87d2",
+     "message": "programmé pour 2026-11-25T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story": {
+    "id": "6b05f078ad5aa59f729a88c7",
+    "message": "programmé pour 2026-11-25T21:00:00.000Z"
+   },
    "test": false,
    "titre": "Unfezant & Mega Victreebel vs Gengar & Mega Tyranitar… nobody's safe in this one ⭐👻 #shorts",
+   "valide_le": "2026-11-24T20:15:43.301273+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP026.mp4"
   },
   "EP027": {
+   "creneau": "2026-11-26T01:00:00+00:00",
    "creneau_prevu": "2026-11-26T01:00:00+00:00",
    "envoye_le": "2026-11-24T20:05:49.658154+00:00",
    "message_id": 158,
@@ -1036,13 +1056,32 @@
     "titre": "Zoroark vs Slowking… is the favorite really safe? 🌑💧 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nOn paper, Zoroark has the edge: dark beats water. But on paper never won a battle.\n\nWhat's your favorite Pokémon of all time? The most liked answer gets its own battle 👀\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemontrainer #gamingislife #gamergram #gaming #gamingchannel #videogames"
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6b05f07ac966bca3fada8167",
+     "message": "programmé pour 2026-11-26T01:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b05f079700a24460eba50ad",
+     "message": "programmé pour 2026-11-26T01:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b05f07ac966bca3fada8117",
+     "message": "programmé pour 2026-11-26T01:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story": {
+    "id": "6b05f07b78379dac14050b24",
+    "message": "programmé pour 2026-11-26T02:00:00.000Z"
+   },
    "test": false,
    "titre": "Zoroark vs Slowking… is the favorite really safe? 🌑💧 #shorts",
+   "valide_le": "2026-11-24T20:15:43.702010+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP027.mp4"
   },
   "EP028": {
+   "creneau": "2026-11-26T20:00:00+00:00",
    "creneau_prevu": "2026-11-26T20:00:00+00:00",
    "envoye_le": "2026-11-24T20:05:53.184147+00:00",
    "message_id": 161,
@@ -1055,16 +1094,57 @@
     "titre": "Volcarona & Golisopod vs Emboar & Mega Salamence… nobody's safe in this one 🐛🔥 #shorts",
     "youtube_description": "Volcarona & Golisopod vs Emboar & Mega Salamence in Crystal Cave. I did not expect this one to go like that.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhat's your favorite Pokémon of all time? The most liked answer gets its own battle 👀\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingchannel #pokemontrainer #videogames #gamergram #gaming #gamingislife"
    },
+   "programme": {
+    "instagram": {
+     "id": "6b05f07d700a24460eba53e3",
+     "message": "programmé pour 2026-11-26T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b05f07c700a24460eba5325",
+     "message": "programmé pour 2026-11-26T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b05f07d78379dac14050bac",
+     "message": "programmé pour 2026-11-26T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story": {
+    "id": "6b05f07ec966bca3fada8315",
+    "message": "programmé pour 2026-11-26T21:00:00.000Z"
+   },
+   "test": false,
+   "titre": "Volcarona & Golisopod vs Emboar & Mega Salamence… nobody's safe in this one 🐛🔥 #shorts",
+   "valide_le": "2026-11-24T20:15:43.898730+00:00",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP028.mp4"
+  },
+  "EP029": {
+   "creneau_prevu": "2026-11-27T01:00:00+00:00",
+   "envoye_le": "2026-11-24T20:15:47.576153+00:00",
+   "message_id": 165,
+   "meta": {
+    "hashtags": [],
+    "id": "EP029",
+    "legende": "Two Pokémon walk into Dragon Sanctuary. Only one Pokémon walks out.\n\nNeither side has the type edge, which makes this one a real coin flip.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battles every day at 3 PM and 8 PM ET ⚡\n📲 Crossover Arena is on YouTube, TikTok & Instagram — links in bio 🔗\n\n#pokemon #pokemoncommunity #pokemonfan #gaming #gamergram",
+    "miniature_s": 0.2,
+    "test": false,
+    "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
+    "youtube_description": "Two Pokémon walk into Dragon Sanctuary. Only one Pokémon walks out.\nNeither side has the type edge, which makes this one a real coin flip.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gaming #gamergram #videogames #gamingislife #pokemontrainer"
+   },
    "programme": {},
    "statut": "envoye",
    "test": false,
-   "titre": "Volcarona & Golisopod vs Emboar & Mega Salamence… nobody's safe in this one 🐛🔥 #shorts",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP028.mp4"
+   "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP029.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [],
+ "relais_a_confirmer": [
+  976274046,
+  976274047,
+  976274048
+ ],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
