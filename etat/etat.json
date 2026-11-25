@@ -6,6 +6,7 @@
   "relance-EP011": "2026-11-20T06:18:27.429198+00:00",
   "stock-bas": "2026-11-24T19:45:54.281142+00:00",
   "story-EP029": "2026-11-25T01:05:45.492186+00:00",
+  "story-EP030": "2026-11-25T07:05:50.719968+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -14,7 +15,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 10,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1159,6 +1160,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP029.mp4"
   },
   "EP030": {
+   "creneau": "2026-11-27T20:00:00+00:00",
    "creneau_prevu": "2026-11-27T20:00:00+00:00",
    "envoye_le": "2026-11-24T20:25:52.329505+00:00",
    "message_id": 172,
@@ -1171,13 +1173,29 @@
     "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
     "youtube_description": "They walk into Central Stadium. Only one team walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nHot take: Zacian is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #gamingislife #videogames #gamingchannel #gamergram #pokemontrainer"
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6b0688ccc68d7845a48cf5e9",
+     "message": "programmé pour 2026-11-27T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b0688ca40e1d58d12084725",
+     "message": "programmé pour 2026-11-27T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b0688cbb6204bca46d51d20",
+     "message": "programmé pour 2026-11-27T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
+   "valide_le": "2026-11-25T07:05:41.483434+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP030.mp4"
   },
   "EP031": {
+   "creneau": "2026-11-28T20:00:00+00:00",
    "creneau_prevu": "2026-11-28T20:00:00+00:00",
    "envoye_le": "2026-11-24T20:25:56.507934+00:00",
    "message_id": 175,
@@ -1190,13 +1208,24 @@
     "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
     "youtube_description": "Mew vs Dialga in Sky Stadium. I did not expect this one to go like that.\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #pokemontrainer #gamingchannel #gamergram #videogames #gaming"
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6b0688cf9cddd8483ab92a1f",
+     "message": "programmé pour 2026-11-28T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b0688d0d8874a038cfe2fd5",
+     "message": "programmé pour 2026-11-28T20:00:00.000Z"
+    }
+   },
+   "statut": "valide",
    "test": false,
    "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
+   "valide_le": "2026-11-25T07:05:42.142497+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP031.mp4"
   },
   "EP032": {
+   "creneau": "2026-11-29T01:00:00+00:00",
    "creneau_prevu": "2026-11-29T01:00:00+00:00",
    "envoye_le": "2026-11-24T20:35:44.179180+00:00",
    "message_id": 180,
@@ -1209,10 +1238,20 @@
     "titre": "Mega Scizor & Swanna vs Bastiodon & Ceruledge… nobody's safe in this one 🐛🪨 #shorts",
     "youtube_description": "This battle in Toxic Stadium had me on the edge of my seat.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #videogames #pokemonfan #gamergram #gaming #gamingchannel #gamingislife"
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6b0688d19cddd8483ab92f4a",
+     "message": "programmé pour 2026-11-29T01:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b0688d3d8874a038cfe3236",
+     "message": "programmé pour 2026-11-29T01:00:00.000Z"
+    }
+   },
+   "statut": "valide",
    "test": false,
    "titre": "Mega Scizor & Swanna vs Bastiodon & Ceruledge… nobody's safe in this one 🐛🪨 #shorts",
+   "valide_le": "2026-11-25T07:05:42.517665+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP032.mp4"
   },
   "EP033": {
@@ -1229,9 +1268,10 @@
     "youtube_description": "This battle in Tropical Jungle had me on the edge of my seat.\nEveryone's going to say Crawdaunt because of the type matchup. I'm not so sure about that.\n\nWhich 2 Pokémon should fight next? Drop your matchup in the comments, the most liked one gets made 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #gamingislife #videogames #pokemontrainer #pokemonfan #gamingchannel"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Crawdaunt vs Mega Chandelure… is the favorite really safe? 💧👻 #shorts",
+   "valide_le": "2026-11-25T07:05:42.898863+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP033.mp4"
   },
   "EP034": {
@@ -1248,9 +1288,10 @@
     "youtube_description": "They walk into Volcano Forge. Only one team walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingchannel #gamergram #pokemonfan #videogames #gamingislife #gaming"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Lugia & Xerneas vs Mega Darkrai & Cosmoem… one hit could end it 🔮🌑 #shorts",
+   "valide_le": "2026-11-25T07:05:43.331846+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP034.mp4"
   },
   "EP035": {
@@ -1267,9 +1308,10 @@
     "youtube_description": "Two Pokémon walk into Toxic Stadium. Only one Pokémon walks out.\nOn paper, Dugtrio has the edge: ground beats electric. But on paper never won a battle.\n\nHot take: Dugtrio is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gamingislife #videogames #gaming #gamergram #pokemontrainer"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Dugtrio vs Mega Ampharos… the type chart says one thing… ⛏️⚡ #shorts",
+   "valide_le": "2026-11-25T07:05:43.750168+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP035.mp4"
   },
   "EP036": {
@@ -1286,9 +1328,10 @@
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhich arena should the next battle be in? Volcano, ocean, space, something crazier? 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #videogames #pokemontrainer #gamingislife #pokemonfan #gamingchannel"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Mega Lucario & Armaldo vs Mega Gyarados & Blastoise… one hit could end it 🥊💧 #shorts",
+   "valide_le": "2026-11-25T07:05:44.203835+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP036.mp4"
   },
   "EP037": {
@@ -1305,9 +1348,10 @@
     "youtube_description": "Lycanroc vs Mega Blaziken in Banquise. I did not expect this one to go like that.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhich move do you want to see next? Best idea gets used in the next battle 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingislife #gamergram #pokemontrainer #videogames #gaming #pokemonfan"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Lycanroc vs Mega Blaziken… nobody's safe in this one 🪨🔥 #shorts",
+   "valide_le": "2026-11-25T07:05:44.548232+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP037.mp4"
   },
   "EP038": {
@@ -1324,9 +1368,10 @@
     "youtube_description": "This battle in Central Stadium had me on the edge of my seat.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhich move do you want to see next? Best idea gets used in the next battle 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingislife #gamergram #gaming #pokemonfan #videogames #pokemontrainer"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Mega Venusaur & Mamoswine vs Genesect & Mega Delphox… one hit could end it 🌿🐛 #shorts",
+   "valide_le": "2026-11-25T07:05:44.936323+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP038.mp4"
   },
   "EP039": {
@@ -1343,15 +1388,27 @@
     "youtube_description": "Two Pokémon walk into Quarry. Only one Pokémon walks out.\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gamergram #videogames #gamingchannel #pokemontrainer #gamingislife"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Machamp vs Wailord… no type advantage, all skill 🥊💧 #shorts",
+   "valide_le": "2026-11-25T07:05:45.384026+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP039.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [],
+ "relais_a_confirmer": [
+  976274050,
+  976274051,
+  976274052,
+  976274053,
+  976274054,
+  976274055,
+  976274056,
+  976274057,
+  976274058,
+  976274059
+ ],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
