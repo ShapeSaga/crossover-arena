@@ -1151,7 +1151,8 @@
     }
    },
    "statut": "programme",
-   "story_refus": 2,
+   "story_abandon": true,
+   "story_refus": 3,
    "test": false,
    "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
    "valide_le": "2026-11-24T20:25:48.215264+00:00",
