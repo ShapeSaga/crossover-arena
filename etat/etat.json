@@ -846,6 +846,7 @@
     "titre": "Haxorus vs Mega Garchomp… nobody's safe in this one 🔵🔴 #shorts",
     "youtube_description": "Two Pokémon walk into Night Stadium. Only one Pokémon walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhich 2 Pokémon should fight next? Drop your matchup in the comments, the most liked one gets made 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemontrainer #gamingchannel #pokemonfan #gamingislife #gamergram #videogames"
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6b05e992ea43dfa94f1d7a0a",
@@ -871,7 +872,8 @@
    "test": false,
    "titre": "Haxorus vs Mega Garchomp… nobody's safe in this one 🔵🔴 #shorts",
    "valide_le": "2026-11-24T19:45:50.893996+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP019.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP019.mp4",
+   "youtube_id": "h3bC_LenCE0"
   },
   "EP020": {
    "creneau_prevu": "2026-11-27T20:00:00+00:00",
@@ -1149,7 +1151,7 @@
     }
    },
    "statut": "programme",
-   "story_refus": 1,
+   "story_refus": 2,
    "test": false,
    "titre": "Flareon vs Typhlosion… pure power, no excuses 🔵🔴 #shorts",
    "valide_le": "2026-11-24T20:25:48.215264+00:00",
