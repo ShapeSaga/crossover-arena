@@ -7,6 +7,7 @@
   "stock-bas": "2026-11-24T19:45:54.281142+00:00",
   "story-EP029": "2026-11-25T01:05:45.492186+00:00",
   "story-EP030": "2026-11-25T07:05:50.719968+00:00",
+  "story-EP031": "2026-11-25T20:05:38.979039+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -1212,6 +1213,10 @@
     "youtube_description": "Mew vs Dialga in Sky Stadium. I did not expect this one to go like that.\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #pokemontrainer #gamingchannel #gamergram #videogames #gaming"
    },
    "programme": {
+    "instagram": {
+     "id": "6b073f904b0d1382c82bd126",
+     "message": "programmé pour 2026-11-28T20:00:00.000Z"
+    },
     "tiktok": {
      "id": "6b0688cf9cddd8483ab92a1f",
      "message": "programmé pour 2026-11-28T20:00:00.000Z"
@@ -1221,7 +1226,8 @@
      "message": "programmé pour 2026-11-28T20:00:00.000Z"
     }
    },
-   "statut": "valide",
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Mew vs Dialga… no type advantage, all skill 🔮⚙️ #shorts",
    "valide_le": "2026-11-25T07:05:42.142497+00:00",
@@ -1258,6 +1264,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP032.mp4"
   },
   "EP033": {
+   "creneau": "2026-11-29T20:00:00+00:00",
    "creneau_prevu": "2026-11-29T20:00:00+00:00",
    "envoye_le": "2026-11-24T20:45:51.630789+00:00",
    "message_id": 184,
@@ -1270,7 +1277,16 @@
     "titre": "Crawdaunt vs Mega Chandelure… is the favorite really safe? 💧👻 #shorts",
     "youtube_description": "This battle in Tropical Jungle had me on the edge of my seat.\nEveryone's going to say Crawdaunt because of the type matchup. I'm not so sure about that.\n\nWhich 2 Pokémon should fight next? Drop your matchup in the comments, the most liked one gets made 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #gamingislife #videogames #pokemontrainer #pokemonfan #gamingchannel"
    },
-   "programme": {},
+   "programme": {
+    "tiktok": {
+     "id": "6b073f934b0d1382c82bd255",
+     "message": "programmé pour 2026-11-29T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b073f9420bdfa4cacab6109",
+     "message": "programmé pour 2026-11-29T20:00:00.000Z"
+    }
+   },
    "statut": "valide",
    "test": false,
    "titre": "Crawdaunt vs Mega Chandelure… is the favorite really safe? 💧👻 #shorts",
