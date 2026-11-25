@@ -1188,7 +1188,8 @@
     }
    },
    "statut": "programme",
-   "story_refus": 2,
+   "story_abandon": true,
+   "story_refus": 3,
    "test": false,
    "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
    "valide_le": "2026-11-25T07:05:41.483434+00:00",
