@@ -15,7 +15,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 10,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1188,7 +1188,7 @@
     }
    },
    "statut": "programme",
-   "story_refus": 1,
+   "story_refus": 2,
    "test": false,
    "titre": "Zacian & Mega Latios vs Glastrier & Mega Rayquaza… one hit could end it ✨❄️ #shorts",
    "valide_le": "2026-11-25T07:05:41.483434+00:00",
@@ -1397,18 +1397,7 @@
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [
-  976274050,
-  976274051,
-  976274052,
-  976274053,
-  976274054,
-  976274055,
-  976274056,
-  976274057,
-  976274058,
-  976274059
- ],
+ "relais_a_confirmer": [],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
