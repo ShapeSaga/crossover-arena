@@ -10,6 +10,7 @@
   "story-EP031": "2026-11-25T20:05:38.979039+00:00",
   "story-EP032": "2026-11-25T21:05:49.911728+00:00",
   "story-EP033": "2026-11-26T01:05:44.308123+00:00",
+  "story-EP034": "2026-11-26T02:05:39.695950+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -1327,6 +1328,10 @@
     "youtube_description": "They walk into Volcano Forge. Only one team walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingchannel #gamergram #pokemonfan #videogames #gamingislife #gaming"
    },
    "programme": {
+    "instagram": {
+     "id": "6b0793f1b96dd8d3517e32da",
+     "message": "programmé pour 2026-11-30T01:00:00.000Z"
+    },
     "tiktok": {
      "id": "6b0785e9b8e2338b857a1cea",
      "message": "programmé pour 2026-11-30T01:00:00.000Z"
@@ -1336,7 +1341,8 @@
      "message": "programmé pour 2026-11-30T01:00:00.000Z"
     }
    },
-   "statut": "valide",
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Lugia & Xerneas vs Mega Darkrai & Cosmoem… one hit could end it 🔮🌑 #shorts",
    "valide_le": "2026-11-25T07:05:43.331846+00:00",
