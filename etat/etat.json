@@ -19,7 +19,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1464,9 +1464,10 @@
     "youtube_description": "Palkia & Mew vs Regieleki & Necrozma in Scorching Desert. I did not expect this one to go like that.\nOn paper, Regieleki & Necrozma has the edge: electric beats water. But on paper never won a battle.\n\nGive me a Pokémon you think nobody can beat. I'll put it to the test 😤\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingislife #videogames #gamingchannel #pokemontrainer #gamergram #gaming"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Palkia & Mew vs Regieleki & Necrozma… don't trust the type chart 💧⚡ #shorts",
+   "valide_le": "2026-11-26T17:35:34.972932+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP040.mp4"
   },
   "EP041": {
@@ -1483,15 +1484,19 @@
     "youtube_description": "Exeggutor vs Ceruledge in Quarry. I did not expect this one to go like that.\nOn paper, Ceruledge has the edge: fire beats grass. But on paper never won a battle.\n\nHot take: Exeggutor is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamergram #videogames #pokemonfan #gaming #pokemontrainer #gamingislife"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Exeggutor vs Ceruledge… is the favorite really safe? 🌿🔥 #shorts",
+   "valide_le": "2026-11-26T17:35:35.470938+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP041.mp4"
   }
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [],
+ "relais_a_confirmer": [
+  976274060,
+  976274061
+ ],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
