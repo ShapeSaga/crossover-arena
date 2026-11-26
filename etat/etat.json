@@ -19,7 +19,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1493,10 +1493,7 @@
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [
-  976274060,
-  976274061
- ],
+ "relais_a_confirmer": [],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
