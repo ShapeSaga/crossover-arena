@@ -1112,6 +1112,7 @@
     "titre": "Volcarona & Golisopod vs Emboar & Mega Salamence… nobody's safe in this one 🐛🔥 #shorts",
     "youtube_description": "Volcarona & Golisopod vs Emboar & Mega Salamence in Crystal Cave. I did not expect this one to go like that.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nWhat's your favorite Pokémon of all time? The most liked answer gets its own battle 👀\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingchannel #pokemontrainer #videogames #gamergram #gaming #gamingislife"
    },
+   "miniature_yt": true,
    "programme": {
     "instagram": {
      "id": "6b05f07d700a24460eba53e3",
@@ -1134,7 +1135,8 @@
    "test": false,
    "titre": "Volcarona & Golisopod vs Emboar & Mega Salamence… nobody's safe in this one 🐛🔥 #shorts",
    "valide_le": "2026-11-24T20:15:43.898730+00:00",
-   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP028.mp4"
+   "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP028.mp4",
+   "youtube_id": "wFfPm0bbnP4"
   },
   "EP029": {
    "creneau": "2026-11-27T01:00:00+00:00",
@@ -1381,7 +1383,8 @@
     }
    },
    "statut": "programme",
-   "story_refus": 2,
+   "story_abandon": true,
+   "story_refus": 3,
    "test": false,
    "titre": "Dugtrio vs Mega Ampharos… the type chart says one thing… ⛏️⚡ #shorts",
    "valide_le": "2026-11-25T07:05:43.750168+00:00",
