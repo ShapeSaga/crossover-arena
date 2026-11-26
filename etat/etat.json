@@ -9,6 +9,7 @@
   "story-EP030": "2026-11-25T07:05:50.719968+00:00",
   "story-EP031": "2026-11-25T20:05:38.979039+00:00",
   "story-EP032": "2026-11-25T21:05:49.911728+00:00",
+  "story-EP033": "2026-11-26T01:05:44.308123+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -1288,6 +1289,10 @@
     "youtube_description": "This battle in Tropical Jungle had me on the edge of my seat.\nEveryone's going to say Crawdaunt because of the type matchup. I'm not so sure about that.\n\nWhich 2 Pokémon should fight next? Drop your matchup in the comments, the most liked one gets made 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #gamingislife #videogames #pokemontrainer #pokemonfan #gamingchannel"
    },
    "programme": {
+    "instagram": {
+     "id": "6b0785e6b96dd8d3517881fa",
+     "message": "programmé pour 2026-11-29T20:00:00.000Z"
+    },
     "tiktok": {
      "id": "6b073f934b0d1382c82bd255",
      "message": "programmé pour 2026-11-29T20:00:00.000Z"
@@ -1297,13 +1302,15 @@
      "message": "programmé pour 2026-11-29T20:00:00.000Z"
     }
    },
-   "statut": "valide",
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Crawdaunt vs Mega Chandelure… is the favorite really safe? 💧👻 #shorts",
    "valide_le": "2026-11-25T07:05:42.898863+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP033.mp4"
   },
   "EP034": {
+   "creneau": "2026-11-30T01:00:00+00:00",
    "creneau_prevu": "2026-11-30T01:00:00+00:00",
    "envoye_le": "2026-11-24T20:45:55.347585+00:00",
    "message_id": 187,
@@ -1316,7 +1323,16 @@
     "titre": "Lugia & Xerneas vs Mega Darkrai & Cosmoem… one hit could end it 🔮🌑 #shorts",
     "youtube_description": "They walk into Volcano Forge. Only one team walks out.\nBoth sides can hit super effective here, so it's really about who lands it first.\n\nName a Pokémon that deserves way more love. Let's hear it 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingchannel #gamergram #pokemonfan #videogames #gamingislife #gaming"
    },
-   "programme": {},
+   "programme": {
+    "tiktok": {
+     "id": "6b0785e9b8e2338b857a1cea",
+     "message": "programmé pour 2026-11-30T01:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b0785e9b8e2338b857a1d38",
+     "message": "programmé pour 2026-11-30T01:00:00.000Z"
+    }
+   },
    "statut": "valide",
    "test": false,
    "titre": "Lugia & Xerneas vs Mega Darkrai & Cosmoem… one hit could end it 🔮🌑 #shorts",
