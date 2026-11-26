@@ -11,6 +11,7 @@
   "story-EP032": "2026-11-25T21:05:49.911728+00:00",
   "story-EP033": "2026-11-26T01:05:44.308123+00:00",
   "story-EP034": "2026-11-26T02:05:39.695950+00:00",
+  "story-EP035": "2026-11-26T20:05:47.964897+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -1352,6 +1353,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP034.mp4"
   },
   "EP035": {
+   "creneau": "2026-11-30T20:00:00+00:00",
    "creneau_prevu": "2026-11-30T20:00:00+00:00",
    "envoye_le": "2026-11-24T23:15:56.307932+00:00",
    "message_id": 191,
@@ -1364,8 +1366,22 @@
     "titre": "Dugtrio vs Mega Ampharos… the type chart says one thing… ⛏️⚡ #shorts",
     "youtube_description": "Two Pokémon walk into Toxic Stadium. Only one Pokémon walks out.\nOn paper, Dugtrio has the edge: ground beats electric. But on paper never won a battle.\n\nHot take: Dugtrio is overrated. Change my mind 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gamingislife #videogames #gaming #gamergram #pokemontrainer"
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b089119f0a96d0f2188ccca",
+     "message": "programmé pour 2026-11-30T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b0891171fa409158294ef89",
+     "message": "programmé pour 2026-11-30T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b089118f0a96d0f2188cc66",
+     "message": "programmé pour 2026-11-30T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Dugtrio vs Mega Ampharos… the type chart says one thing… ⛏️⚡ #shorts",
    "valide_le": "2026-11-25T07:05:43.750168+00:00",
