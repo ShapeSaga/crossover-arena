@@ -21,7 +21,7 @@
   "21:00"
  ],
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1565,9 +1565,10 @@
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nOn paper, Cinderace & Milotic has the edge: fire beats fire. But on paper never won a battle.\n\nWhich move do you want to see next? Best idea gets used in the next battle 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gaming #videogames #gamingchannel #gamingislife #pokemontrainer"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Cinderace & Milotic vs Incineroar & Gothitelle… is the favorite really safe? 🔵🔴 #shorts",
+   "valide_le": "2026-11-27T22:55:42.706618+00:00",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP042.mp4"
   },
   "EP043": {
@@ -1584,7 +1585,7 @@
     "youtube_description": "Mega Feraligatr vs Mega Latios in Sky Stadium. I did not expect this one to go like that.\nMega Feraligatr and Mega Latios can both punch through each other's defenses. One good hit could decide everything.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemontrainer #gamingislife #pokemonfan #gamingchannel #videogames #gamergram"
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "refuse",
    "test": false,
    "titre": "Mega Feraligatr vs Mega Latios… one hit could end it 💧🐉 #shorts",
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP043.mp4"
@@ -1592,7 +1593,10 @@
  },
  "offset": 0,
  "pause": false,
- "relais_a_confirmer": [],
+ "relais_a_confirmer": [
+  976274062,
+  976274063
+ ],
  "youtube": {
   "autorise_le": "2026-11-20T00:41:48.428773+00:00",
   "demande_le": null
