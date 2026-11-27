@@ -1462,7 +1462,8 @@
     }
    },
    "statut": "programme",
-   "story_refus": 2,
+   "story_abandon": true,
+   "story_refus": 3,
    "test": false,
    "titre": "Lycanroc vs Mega Blaziken… nobody's safe in this one 🪨🔥 #shorts",
    "valide_le": "2026-11-25T07:05:44.548232+00:00",
