@@ -1391,6 +1391,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP035.mp4"
   },
   "EP036": {
+   "creneau": "2026-12-01T01:00:00+00:00",
    "creneau_prevu": "2026-12-01T01:00:00+00:00",
    "envoye_le": "2026-11-24T23:16:00.644250+00:00",
    "message_id": 194,
@@ -1403,8 +1404,25 @@
     "titre": "Mega Lucario & Armaldo vs Mega Gyarados & Blastoise… one hit could end it 🥊💧 #shorts",
     "youtube_description": "Honestly, I changed my mind three times watching this one.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhich arena should the next battle be in? Volcano, ocean, space, something crazier? 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gaming #videogames #pokemontrainer #gamingislife #pokemonfan #gamingchannel"
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b08d76b7c3f43554e46794e",
+     "message": "programmé pour 2026-12-01T01:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b08d7699131f7416c605a6d",
+     "message": "programmé pour 2026-12-01T01:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b08d76a70e2a88e2ce55e3d",
+     "message": "programmé pour 2026-12-01T01:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story": {
+    "id": "6b08d76c9131f7416c605f9b",
+    "message": "programmé pour 2026-12-01T02:00:00.000Z"
+   },
    "test": false,
    "titre": "Mega Lucario & Armaldo vs Mega Gyarados & Blastoise… one hit could end it 🥊💧 #shorts",
    "valide_le": "2026-11-25T07:05:44.203835+00:00",
