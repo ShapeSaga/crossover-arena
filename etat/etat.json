@@ -12,6 +12,7 @@
   "story-EP033": "2026-11-26T01:05:44.308123+00:00",
   "story-EP034": "2026-11-26T02:05:39.695950+00:00",
   "story-EP035": "2026-11-26T20:05:47.964897+00:00",
+  "story-EP037": "2026-11-27T20:05:46.296258+00:00",
   "yt-droits": "2026-11-20T00:47:55.417648+00:00"
  },
  "correctif_instagram": 1,
@@ -1433,6 +1434,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP036.mp4"
   },
   "EP037": {
+   "creneau": "2026-12-01T20:00:00+00:00",
    "creneau_prevu": "2026-12-01T20:00:00+00:00",
    "envoye_le": "2026-11-24T23:25:51.566014+00:00",
    "message_id": 198,
@@ -1445,8 +1447,22 @@
     "titre": "Lycanroc vs Mega Blaziken… nobody's safe in this one 🪨🔥 #shorts",
     "youtube_description": "Lycanroc vs Mega Blaziken in Banquise. I did not expect this one to go like that.\nNo safe side in this one: each of them has the type to hurt the other badly.\n\nWhich move do you want to see next? Best idea gets used in the next battle 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #gamingislife #gamergram #pokemontrainer #videogames #gaming #pokemonfan"
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b09e298277f27038a355fe4",
+     "message": "programmé pour 2026-12-01T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b09e296b5cd052fe2896570",
+     "message": "programmé pour 2026-12-01T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b09e2972ea34800c28ec2d5",
+     "message": "programmé pour 2026-12-01T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story_refus": 1,
    "test": false,
    "titre": "Lycanroc vs Mega Blaziken… nobody's safe in this one 🪨🔥 #shorts",
    "valide_le": "2026-11-25T07:05:44.548232+00:00",
