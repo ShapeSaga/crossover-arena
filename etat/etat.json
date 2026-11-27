@@ -1203,11 +1203,13 @@
      "message": "programmé pour 2026-11-27T20:00:00.000Z"
     },
     "youtube": {
-     "id": "6b0688cbb6204bca46d51d20",
-     "message": "programmé pour 2026-11-27T20:00:00.000Z"
+     "id": "6b09feb123fb5b7700f6fe1d",
+     "message": "programmé pour 2026-12-05T01:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "relance_yt": "2026-12-05T01:00:00+00:00",
+   "relances_yt": 1,
+   "statut": "publie",
    "story_abandon": true,
    "story_refus": 3,
    "test": false,
