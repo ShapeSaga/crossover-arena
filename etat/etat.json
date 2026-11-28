@@ -1513,6 +1513,7 @@
    "video_url": "https://github.com/ShapeSaga/crossover-arena/releases/download/videos/EP038.mp4"
   },
   "EP039": {
+   "creneau": "2026-12-02T20:00:00+00:00",
    "creneau_prevu": "2026-12-02T20:00:00+00:00",
    "envoye_le": "2026-11-24T23:35:53.453713+00:00",
    "message_id": 205,
@@ -1525,8 +1526,25 @@
     "titre": "Machamp vs Wailord… no type advantage, all skill 🥊💧 #shorts",
     "youtube_description": "Two Pokémon walk into Quarry. Only one Pokémon walks out.\nNeither side has the type edge, which makes this one a real coin flip.\n\nWhat should we add to the game next: legendaries, new arenas, double battles, Gigantamax? Tell us 👇\n\nNew battle every day at 3 PM and 8 PM ET. If you like these, subscribe, there's a lot more coming.\n\n📲 Follow Crossover Arena everywhere:\n▶️ TikTok: https://www.tiktok.com/@crossover.arena\n📸 Instagram: https://www.instagram.com/crossoverarena/\n🔔 Subscribe: https://www.youtube.com/@CrossoverArena?sub_confirmation=1\n\n#shorts #pokemon #pokemoncommunity #pokemonfan #gamergram #videogames #gamingchannel #pokemontrainer #gamingislife"
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b0b3418c2c05b6cf49a8d1e",
+     "message": "programmé pour 2026-12-02T20:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b0b34175e276ead9fcdb8de",
+     "message": "programmé pour 2026-12-02T20:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b0b34186deb644351d60f8b",
+     "message": "programmé pour 2026-12-02T20:00:00.000Z"
+    }
+   },
+   "statut": "programme",
+   "story": {
+    "id": "6b0b34195e276ead9fcdba84",
+    "message": "programmé pour 2026-12-02T21:00:00.000Z"
+   },
    "test": false,
    "titre": "Machamp vs Wailord… no type advantage, all skill 🥊💧 #shorts",
    "valide_le": "2026-11-25T07:05:45.384026+00:00",
