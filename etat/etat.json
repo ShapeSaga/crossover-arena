@@ -1503,7 +1503,8 @@
     }
    },
    "statut": "programme",
-   "story_refus": 2,
+   "story_abandon": true,
+   "story_refus": 3,
    "test": false,
    "titre": "Mega Venusaur & Mamoswine vs Genesect & Mega Delphox… one hit could end it 🌿🐛 #shorts",
    "valide_le": "2026-11-25T07:05:44.936323+00:00",
